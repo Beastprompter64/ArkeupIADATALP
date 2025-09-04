@@ -1,0 +1,50 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        'african-violet': {
+          50: '#faf8fb',
+          100: '#f4f0f6',
+          200: '#e9e1eb',
+          300: '#d9c8dc',
+          400: '#c4a5c7',
+          500: '#a56fa6',
+          600: '#925a94',
+          700: '#7a4a7c',
+          800: '#653e66',
+          900: '#543555',
+          DEFAULT: '#a56fa6',
+        },
+        'blue-green': {
+          50: '#f0f9fc',
+          100: '#e0f2f8',
+          200: '#c1e5f1',
+          300: '#93d2e6',
+          400: '#5eb6d4',
+          500: '#309fc7',
+          600: '#2a8bb0',
+          700: '#24708f',
+          800: '#225e76',
+          900: '#214f63',
+          DEFAULT: '#309fc7',
+        },
+        'arkeup-gray': {
+          50: '#f8f9fa',
+          100: '#f1f3f4',
+          200: '#e8eaed',
+          300: '#dadce0',
+          400: '#bdc1c6',
+          500: '#9aa0a6',
+          600: '#80868b',
+          700: '#5f6368',
+          800: '#58595b',
+          900: '#202124',
+          DEFAULT: '#58595b',
+        },
+      },
+    },
+  },
+  plugins: [],
+};
