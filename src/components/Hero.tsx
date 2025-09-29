@@ -52,6 +52,10 @@ const Hero = () => {
       errors.company = 'Le nom de l\'entreprise est requis';
     }
     
+    if (!roiFormData.phone.trim()) {
+      errors.phone = 'Le numéro de téléphone est requis';
+    }
+    
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
   };
@@ -222,7 +226,7 @@ const Hero = () => {
             }
           }}
         >
-          <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto transform transition-all duration-300 scale-100">
+          <div className="bg-white rounded-3xl shadow-2xl max-w-xl w-full transform transition-all duration-300 scale-100">
             <div className="flex items-center justify-between p-6 border-b border-gray-100">
               <div>
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">
@@ -238,22 +242,22 @@ const Hero = () => {
                 <X className="w-6 h-6 text-gray-500" />
               </button>
             </div>
-            <div className="p-6">
-              <div className="mb-6">
+            <div className="px-6 pb-6">
+              <div className="mb-5">
                 <h4 className="text-lg font-semibold text-arkeup-gray-800 mb-4">
                   Obtenez votre analyse ROI personnalisée
                 </h4>
-                <div className="space-y-3">
+                <div className="grid grid-cols-1 gap-2">
                   <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-arkeup-gray-700">Analyse de votre potentiel d'amélioration</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-arkeup-gray-700">Estimation des gains financiers</span>
                   </div>
                   <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
+                    <CheckCircle className="w-5 h-5 text-green-600 mr-3 flex-shrink-0" />
                     <span className="text-arkeup-gray-700">Roadmap de mise en œuvre</span>
                   </div>
                 </div>
@@ -271,7 +275,7 @@ const Hero = () => {
                     required
                     value={roiFormData.name}
                     onChange={handleRoiInputChange}
-                    className={`w-full px-4 py-4 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-lg ${
+                    className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-base ${
                       formErrors.name 
                         ? 'border-red-400 bg-red-50' 
                         : 'border-arkeup-gray-300 hover:border-african-violet/50'
@@ -284,28 +288,54 @@ const Hero = () => {
                   )}
                 </div>
                 
-                <div>
-                  <label htmlFor="roi-email" className="block text-sm font-semibold text-arkeup-gray-700 mb-2">
-                    Votre email professionnel *
-                  </label>
-                  <input
-                    type="email"
-                    id="roi-email"
-                    name="email"
-                    required
-                    value={roiFormData.email}
-                    onChange={handleRoiInputChange}
-                    className={`w-full px-4 py-4 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-lg ${
-                      formErrors.email 
-                        ? 'border-red-400 bg-red-50' 
-                        : 'border-arkeup-gray-300 hover:border-african-violet/50'
-                    }`}
-                    placeholder="jean.dupont@entreprise.com"
-                    autoComplete="email"
-                  />
-                  {formErrors.email && (
-                    <p className="text-red-500 text-sm mt-1 animate-fadeIn">{formErrors.email}</p>
-                  )}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="roi-email" className="block text-sm font-semibold text-arkeup-gray-700 mb-2">
+                      Email professionnel *
+                    </label>
+                    <input
+                      type="email"
+                      id="roi-email"
+                      name="email"
+                      required
+                      value={roiFormData.email}
+                      onChange={handleRoiInputChange}
+                      className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-base ${
+                        formErrors.email 
+                          ? 'border-red-400 bg-red-50' 
+                          : 'border-arkeup-gray-300 hover:border-african-violet/50'
+                      }`}
+                      placeholder="jean.dupont@entreprise.com"
+                      autoComplete="email"
+                    />
+                    {formErrors.email && (
+                      <p className="text-red-500 text-sm mt-1 animate-fadeIn">{formErrors.email}</p>
+                    )}
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="roi-phone" className="block text-sm font-semibold text-arkeup-gray-700 mb-2">
+                      Téléphone *
+                    </label>
+                    <input
+                      type="tel"
+                      id="roi-phone"
+                      name="phone"
+                      required
+                      value={roiFormData.phone}
+                      onChange={handleRoiInputChange}
+                      className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-base ${
+                        formErrors.phone 
+                          ? 'border-red-400 bg-red-50' 
+                          : 'border-arkeup-gray-300 hover:border-african-violet/50'
+                      }`}
+                      placeholder="+33 6 12 34 56 78"
+                      autoComplete="tel"
+                    />
+                    {formErrors.phone && (
+                      <p className="text-red-500 text-sm mt-1 animate-fadeIn">{formErrors.phone}</p>
+                    )}
+                  </div>
                 </div>
                 
                 <div>
@@ -319,7 +349,7 @@ const Hero = () => {
                     required
                     value={roiFormData.company}
                     onChange={handleRoiInputChange}
-                    className={`w-full px-4 py-4 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-lg ${
+                    className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-base ${
                       formErrors.company 
                         ? 'border-red-400 bg-red-50' 
                         : 'border-arkeup-gray-300 hover:border-african-violet/50'
@@ -333,24 +363,8 @@ const Hero = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="roi-phone" className="block text-sm font-semibold text-arkeup-gray-700 mb-2">
-                    Téléphone (optionnel)
-                  </label>
-                  <input
-                    type="tel"
-                    id="roi-phone"
-                    name="phone"
-                    value={roiFormData.phone}
-                    onChange={handleRoiInputChange}
-                    className="w-full px-4 py-4 border border-arkeup-gray-300 hover:border-african-violet/50 rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-lg"
-                    placeholder="+33 6 12 34 56 78"
-                    autoComplete="tel"
-                  />
-                </div>
-                
-                <div>
                   <label htmlFor="roi-website" className="block text-sm font-semibold text-arkeup-gray-700 mb-2">
-                    Site web de votre entreprise (optionnel)
+                    Site web (optionnel)
                   </label>
                   <input
                     type="url"
@@ -358,7 +372,7 @@ const Hero = () => {
                     name="website"
                     value={roiFormData.website}
                     onChange={handleRoiInputChange}
-                    className="w-full px-4 py-4 border border-arkeup-gray-300 hover:border-african-violet/50 rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-lg"
+                    className="w-full px-4 py-3 border border-arkeup-gray-300 hover:border-african-violet/50 rounded-xl focus:ring-2 focus:ring-african-violet focus:border-transparent transition-all duration-200 text-base"
                     placeholder="https://www.votre-entreprise.com"
                     autoComplete="url"
                   />
@@ -367,14 +381,14 @@ const Hero = () => {
                 <button
                   type="submit"
                   disabled={isFormSubmitting}
-                  className={`w-full font-bold py-4 px-8 rounded-xl transition-all text-lg relative overflow-hidden ${
+                  className={`w-full font-bold py-4 px-8 rounded-xl transition-all relative overflow-hidden mt-5 text-lg ${
                     isFormSubmitting
                       ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-african-violet to-blue-green hover:from-blue-green hover:to-african-violet transform hover:scale-105 hover:shadow-xl hover:shadow-african-violet/25'
+                      : 'bg-gradient-to-r from-african-violet to-blue-green hover:from-blue-green hover:to-african-violet hover:shadow-xl hover:shadow-african-violet/25 transform hover:scale-[1.02]'
                   }`}
                 >
                   {isFormSubmitting ? (
-                    <span className="flex items-center justify-center gap-2">
+                    <span className="flex items-center justify-center gap-2 text-white">
                       <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
                       Envoi en cours...
                     </span>
