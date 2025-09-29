@@ -165,22 +165,7 @@ const Hero = () => {
             Là où d'autres reculent, nous transformons vos défis métier en opportunités stratégiques avec des 
             <span className="font-semibold text-african-violet"> solutions IA pour entreprises sur mesure</span>.
           </p>
-          
-          {/* Social proof indicators */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-8 animate-fadeInUp" style={{animationDelay: '600ms', animationFillMode: 'both'}}>
-            <div className="flex items-center gap-3">
-              <div className="flex -space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-african-violet to-blue-green rounded-full border-2 border-white shadow-sm"></div>
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-green to-african-violet rounded-full border-2 border-white shadow-sm"></div>
-                <div className="w-8 h-8 bg-gradient-to-r from-african-violet to-blue-green rounded-full border-2 border-white shadow-sm"></div>
-              </div>
-              <span className="text-sm font-medium text-arkeup-gray-700">+50 entreprises nous font confiance</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-medium text-arkeup-gray-700">⭐ 4.9/5 satisfaction client</span>
-              <span className="text-xs text-arkeup-gray-500">(142 avis)</span>
-            </div>
-          </div>
+        
           
           <div 
             ref={ctaRef}
@@ -219,9 +204,6 @@ const Hero = () => {
             
             {/* Trust indicators below CTAs */}
             <div className="flex items-center gap-4 text-sm text-arkeup-gray-500 mt-4 w-full sm:w-auto">
-              <span className="flex items-center gap-1">
-                ✅ Sans engagement
-              </span>
               <span className="flex items-center gap-1">
                 ⚡ Réponse en 24h
               </span>
