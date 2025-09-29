@@ -32,8 +32,14 @@ const Hero = () => {
     setTimeout(() => {
       if (cta) cta.classList.add('animate-fadeInUp');
     }, 400);
+    
+    // Start floating animation after image fadeInUp completes (300ms delay + 1s duration)
+    setTimeout(() => {
+      setImageFloating(true);
+    }, 1000);
   }, []);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [imageFloating, setImageFloating] = useState(false);
 
   const validateForm = () => {
     const errors: Record<string, string> = {};
@@ -140,13 +146,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent pointer-events-none"></div>
       
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="max-w-2xl lg:max-w-4xl mx-auto lg:mx-0">
-          {/* Enhanced typography with better hierarchy */}
-          <div className="mb-4">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-african-violet/10 to-blue-green/10 border border-african-violet/20 rounded-full text-sm font-medium text-african-violet mb-6 animate-pulse">
-              🚀 Solutions IA de nouvelle génération
-            </span>
-          </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Content */}
+          <div className="max-w-2xl mx-auto lg:mx-0">
+            {/* Enhanced typography with better hierarchy */}
+            <div className="mb-4">
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-african-violet/10 to-blue-green/10 border border-african-violet/20 rounded-full text-sm font-medium text-african-violet mb-6 animate-pulse">
+                🚀 Solutions IA de nouvelle génération
+              </span>
+            </div>
           
           <h1 
             id="hero-title"
@@ -181,7 +189,7 @@ const Hero = () => {
                 setShowSuccessMessage(false);
                 setFormErrors({});
               }}
-              className="bg-gradient-to-r from-african-violet to-blue-green hover:from-blue-green hover:to-african-violet text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-african-violet/25 font-semibold text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none"
+              className="bg-gradient-to-r from-african-violet to-blue-green hover:from-blue-green hover:to-african-violet text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-african-violet/25 font-semibold text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none whitespace-nowrap"
               aria-label="Demander une étude ROI personnalisée"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
@@ -196,7 +204,7 @@ const Hero = () => {
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1MdM0w-HPpRqggY4vV_B4g-bSX1OtxeU6kXq_VInpHfIReMNEE0ngvskzKCZsouNPqMEyfBS0Y?gv=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-center border-2 border-african-violet text-african-violet hover:bg-african-violet hover:text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none"
+              className="inline-block text-center border-2 border-african-violet text-african-violet hover:bg-african-violet hover:text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none whitespace-nowrap"
               aria-label="Planifier un rendez-vous pour discuter de votre projet"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
@@ -205,12 +213,24 @@ const Hero = () => {
                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
             </a>
-            
-            {/* Trust indicators below CTAs */}
-            <div className="flex items-center gap-4 text-sm text-arkeup-gray-500 mt-4 w-full sm:w-auto">
-              <span className="flex items-center gap-1">
-                ⚡ Réponse en 24h
-              </span>
+          
+          </div>
+          </div>
+          
+          {/* Right side - Hero Image */}
+          <div className="hidden lg:flex justify-end items-center pl-8">
+            <div className="relative">
+              <img 
+                src="/heroImage.png" 
+                alt="Intelligence Artificielle - Cerveau connecté représentant nos solutions IA innovantes"
+                className={`w-96 h-96 object-contain animate-fadeInUp ${
+                  imageFloating ? 'animate-float' : ''
+                }`}
+                style={{animationDelay: '300ms', animationFillMode: 'both'}}
+              />
+              {/* Decorative elements */}
+              <div className="absolute -top-2 -right-2 w-16 h-16 bg-gradient-to-r from-african-violet/20 to-blue-green/20 rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-2 -left-2 w-12 h-12 bg-gradient-to-r from-blue-green/20 to-african-violet/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
             </div>
           </div>
         </div>
