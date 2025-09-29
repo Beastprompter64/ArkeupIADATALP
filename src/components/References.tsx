@@ -8,36 +8,15 @@ const References = () => {
     const slider = sliderRef.current;
     if (!slider) return;
 
-    const clone = slider.cloneNode(true);
+    // Create one clone for seamless loop
+    const clone = slider.cloneNode(true) as HTMLElement;
     slider.parentNode?.appendChild(clone);
 
-    let animationFrameId: number;
-    let position = 0;
-    const speed = 0.5;
-
-    const animate = () => {
-      if (!slider.parentNode) return;
-      
-      position -= speed;
-      
-      const firstSlider = slider.parentNode.children[0] as HTMLElement;
-      const secondSlider = slider.parentNode.children[1] as HTMLElement;
-      
-      firstSlider.style.transform = `translateX(${position}px)`;
-      secondSlider.style.transform = `translateX(${position}px)`;
-      
-      if (Math.abs(position) >= firstSlider.offsetWidth) {
-        position = 0;
-      }
-      
-      animationFrameId = requestAnimationFrame(animate);
-    };
-    
-    animationFrameId = requestAnimationFrame(animate);
-
     return () => {
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
+      // Clean up cloned element
+      const parent = slider.parentNode;
+      if (parent && parent.children.length > 1) {
+        parent.removeChild(parent.lastChild!);
       }
     };
   }, []);
@@ -84,12 +63,12 @@ const References = () => {
         <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-gray-50 via-gray-50/60 to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-gray-50 via-gray-50/60 to-transparent z-10 pointer-events-none"></div>
         
-        <div className="flex relative" style={{ width: '200%' }}>
-          <div ref={sliderRef} className="flex items-center justify-around min-w-full py-4">
+        <div className="flex relative animate-scroll">
+          <div ref={sliderRef} className="flex items-center py-4 whitespace-nowrap">
             {clientLogos.map((client, index) => (
               <div 
                 key={`logo-${index}`} 
-                className="mx-8 py-4 group"
+                className="mx-10 py-4 group flex-shrink-0"
               >
                 {/* Enhanced logo cards with modern styling - increased size by 10% */}
                 <div className="w-48 h-32 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-xl hover:border-african-violet/20 group-hover:bg-white relative">
