@@ -151,7 +151,7 @@ const Hero = () => {
           <div className="max-w-2xl mx-auto lg:mx-0">
             {/* Enhanced typography with better hierarchy */}
             <div className="mb-4">
-              <span className="inline-block px-4 py-2 bg-gradient-to-r from-african-violet/10 to-blue-green/10 border border-african-violet/20 rounded-full text-sm font-medium text-african-violet mb-6 animate-pulse">
+              <span className="hidden sm:inline-block px-4 py-2 bg-gradient-to-r from-african-violet/10 to-blue-green/10 border border-african-violet/20 rounded-full text-sm font-medium text-african-violet mb-6 animate-pulse">
                 🚀 Solutions IA de nouvelle génération
               </span>
             </div>
@@ -189,11 +189,11 @@ const Hero = () => {
                 setShowSuccessMessage(false);
                 setFormErrors({});
               }}
-              className="bg-gradient-to-r from-african-violet to-blue-green hover:from-blue-green hover:to-african-violet text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-african-violet/25 font-semibold text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none whitespace-nowrap"
+              className="bg-gradient-to-r from-african-violet to-blue-green hover:from-blue-green hover:to-african-violet text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-african-violet/25 font-semibold text-base sm:text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none whitespace-nowrap"
               aria-label="Demander une étude ROI personnalisée"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
-                <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">📈</span>
+                <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white/20 flex items-center justify-center">📈</span>
                 Mon étude ROI gratuite
                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
@@ -204,11 +204,11 @@ const Hero = () => {
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1MdM0w-HPpRqggY4vV_B4g-bSX1OtxeU6kXq_VInpHfIReMNEE0ngvskzKCZsouNPqMEyfBS0Y?gv=true"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-center border-2 border-african-violet text-african-violet hover:bg-african-violet hover:text-white px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none whitespace-nowrap"
+              className="inline-block text-center border-2 border-african-violet text-african-violet hover:bg-african-violet hover:text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold text-base sm:text-lg w-full sm:w-auto group relative overflow-hidden focus:ring-4 focus:ring-african-violet/30 focus:outline-none whitespace-nowrap"
               aria-label="Planifier un rendez-vous pour discuter de votre projet"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
-                <span className="w-5 h-5 rounded-full bg-current/20 flex items-center justify-center">📅</span>
+                <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-current/20 flex items-center justify-center">📅</span>
                 Planifier un RDV
                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
