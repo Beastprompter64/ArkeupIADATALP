@@ -106,7 +106,7 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" aria-label="Statistiques clés">
+    <section className="py-10 md:py-14 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" aria-label="Statistiques clés">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
