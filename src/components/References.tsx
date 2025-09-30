@@ -63,15 +63,15 @@ const References = () => {
         <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-gray-50 via-gray-50/60 to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-gray-50 via-gray-50/60 to-transparent z-10 pointer-events-none"></div>
         
-        <div className="flex relative animate-scroll">
+        <div className="flex relative animate-scroll-mobile md:animate-scroll">
           <div ref={sliderRef} className="flex items-center py-4 whitespace-nowrap">
             {clientLogos.map((client, index) => (
               <div 
                 key={`logo-${index}`} 
-                className="mx-10 py-4 group flex-shrink-0"
+                className="mx-4 md:mx-10 py-4 group flex-shrink-0"
               >
-                {/* Enhanced logo cards with modern styling - increased size by 10% */}
-                <div className="w-48 h-32 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-xl hover:border-african-violet/20 group-hover:bg-white relative">
+                {/* Enhanced logo cards with modern styling - responsive sizing */}
+                <div className="w-32 h-20 md:w-48 md:h-32 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-xl hover:border-african-violet/20 group-hover:bg-white relative">
                   {/* Subtle hover gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent to-african-violet/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
