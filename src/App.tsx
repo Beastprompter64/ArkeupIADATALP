@@ -18,6 +18,7 @@ import SocleClimatiqueLanding from './pages/SocleClimatiqueLanding';
 import ControlTowerLanding from './pages/ControlTowerLanding';
 import GeoAILanding from './pages/GeoAILanding';
 import LegalNotice from './pages/LegalNotice';
+import AllUseCases from './pages/AllUseCases';
 
 function HomePage() {
   return (
@@ -52,6 +53,7 @@ function App() {
       <Route path="/control-tower" element={<ControlTowerLanding />} />
       <Route path="/geo-ai" element={<GeoAILanding />} />
       <Route path="/mentions-legales" element={<LegalNotice />} />
+      <Route path="/use-cases" element={<AllUseCases />} />
     </Routes>
   );
 }

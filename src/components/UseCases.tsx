@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const UseCases = () => {
@@ -147,7 +147,7 @@ const UseCases = () => {
               </p>
               <div className="mt-4">
                 <button 
-                  onClick={() => navigate('/')}
+                  onClick={() => navigate('/use-cases')}
                   className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent hover:from-blue-green hover:to-african-violet font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1 hover:scale-105 group"
                 >
                   Découvrir
