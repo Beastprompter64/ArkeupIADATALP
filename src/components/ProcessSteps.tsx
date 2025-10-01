@@ -29,20 +29,15 @@ const ProcessSteps = () => {
   return (
     <section className="py-16 md:py-20 bg-white" id="process">
       <div className="container mx-auto px-4 md:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-african-violet/10 shadow-sm mb-6">
-            <div className="w-2 h-2 bg-gradient-to-r from-african-violet to-blue-green rounded-full"></div>
-            <p className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
-              Notre Méthodologie
-            </p>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent mb-4">
+        {/* Section Header - Priorité 2 : Plus impactant */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent mb-6">
             Comment nous procédons
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Une approche simple et éprouvée en 3 étapes pour transformer votre entreprise
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Une approche simple et éprouvée en 3 étapes pour transformer votre entreprise avec l'IA
           </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-african-violet to-blue-green mx-auto rounded-full mt-6"></div>
         </div>
 
         {/* Steps */}

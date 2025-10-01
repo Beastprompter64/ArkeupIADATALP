@@ -22,10 +22,10 @@ function HomePage() {
       <Header />
       <main>
         <Hero />
-        <References />
         <ProcessSteps />
-        <Stats />
         <UseCases />
+        <References />
+        <Stats />
         <Expertise />
       </main>
       <Footer />
