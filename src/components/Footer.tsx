@@ -1,7 +1,3 @@
-import React from 'react';
-import { useState } from 'react';
-import Logo from './Logo';
-
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-arkeup-gray-800 via-african-violet-900 to-blue-green-900 text-white pt-16 pb-8">
