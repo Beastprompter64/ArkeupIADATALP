@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Shield, Target, TrendingUp, Users } from 'lucide-react';
 import { X, CheckCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const Expertise = () => {
-  const navigate = useNavigate();
   const [showRoiForm, setShowRoiForm] = useState(false);
   const [roiFormData, setRoiFormData] = useState({
     name: '',
@@ -134,7 +132,6 @@ const Expertise = () => {
 
               <div className="lg:w-1/2">
                 <h3 className="text-2xl font-bold mb-2 text-arkeup-gray-800">{area.title}</h3>
-                <h4 className="text-xl text-arkeup-orange font-medium mb-4">{area.subtitle}</h4>
                 <h4 className="text-xl text-blue-green font-medium mb-4">{area.subtitle}</h4>
                 <p className="text-arkeup-gray-600 leading-relaxed">{area.description}</p>
               </div>

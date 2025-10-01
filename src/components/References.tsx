@@ -63,7 +63,7 @@ const References = () => {
         <div className="absolute left-0 top-0 w-24 h-full bg-gradient-to-r from-gray-50 via-gray-50/60 to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 w-24 h-full bg-gradient-to-l from-gray-50 via-gray-50/60 to-transparent z-10 pointer-events-none"></div>
         
-        <div className="flex relative animate-scroll-mobile md:animate-scroll">
+        <div className="flex relative animate-scroll">
           <div ref={sliderRef} className="flex items-center py-4 whitespace-nowrap">
             {clientLogos.map((client, index) => (
               <div 
