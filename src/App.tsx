@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import References from './components/References';
 import ProcessSteps from './components/ProcessSteps';
-import Stats from './components/Stats';
 import UseCases from './components/UseCases';
 import Expertise from './components/Expertise';
 import Footer from './components/Footer';
@@ -25,7 +24,6 @@ function HomePage() {
         <ProcessSteps />
         <UseCases />
         <References />
-        <Stats />
         <Expertise />
       </main>
       <Footer />
