@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { CheckCircle, XCircle, Clock, TrendingUp, Zap, Shield, ArrowRight, Users, Brain, MessageSquare, BarChart3, Headphones, AlertTriangle, ChevronDown, ChevronUp, Phone, Mail, X } from 'lucide-react';
+import { CheckCircle, Clock, TrendingUp, Zap, Shield, Users, Brain, MessageSquare, BarChart3, AlertTriangle, ChevronDown, ChevronUp} from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NeuralNetworkBackground from './NeuralNetworkBackground';
 
 const AgentAugmenteLanding = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
