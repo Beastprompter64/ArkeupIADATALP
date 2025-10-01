@@ -31,7 +31,13 @@ const ProcessSteps = () => {
       <div className="container mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-african-violet/10 shadow-sm mb-6">
+            <div className="w-2 h-2 bg-gradient-to-r from-african-violet to-blue-green rounded-full"></div>
+            <p className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
+              Notre Méthodologie
+            </p>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent mb-4">
             Comment nous procédons
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

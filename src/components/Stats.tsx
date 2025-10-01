@@ -106,8 +106,24 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-10 md:py-14 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" aria-label="Statistiques clés">
+    <section className="py-16 md:py-20 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" aria-label="Statistiques clés">
       <div className="container mx-auto px-4 md:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-african-violet/10 shadow-sm mb-6">
+            <div className="w-2 h-2 bg-gradient-to-r from-african-violet to-blue-green rounded-full"></div>
+            <p className="text-sm font-semibold text-gray-700 uppercase tracking-wider">
+              Nos Performances
+            </p>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent mb-4">
+            Les chiffres qui parlent
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Notre expertise reconnue se traduit par des résultats concrets et mesurables
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <StatCard key={index} {...stat} />

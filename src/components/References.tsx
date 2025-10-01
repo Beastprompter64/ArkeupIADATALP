@@ -48,7 +48,7 @@ const References = () => {
           </div>
           
           {/* Enhanced main title */}
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-african-violet to-blue-green bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent mb-4">
             Ils nous font confiance
           </h2>
           
