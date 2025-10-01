@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { X, CheckCircle } from 'lucide-react';
-import NeuralNetworkBackground from './NeuralNetworkBackground';
+import NeuralNetworkBackground from '../pages/NeuralNetworkBackground';
 
 const Hero = () => {
   const [showRoiForm, setShowRoiForm] = useState(false);

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle, XCircle, AlertTriangle, TrendingUp, BarChart3, Shield, ArrowRight, Target, Globe, Database, FileText, ChevronDown, ChevronUp, Zap, Users, Brain, Eye, Activity, Lock, Truck, MapPin, Clock, DollarSign, Factory, Navigation, Gauge, TrendingDown } from 'lucide-react';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import NeuralNetworkBackground from './NeuralNetworkBackground';
 
 const ControlTowerLanding = () => {
