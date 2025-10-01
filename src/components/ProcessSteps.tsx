@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search, Lightbulb, TrendingUp } from 'lucide-react';
 
 const ProcessSteps = () => {
@@ -41,11 +40,11 @@ const ProcessSteps = () => {
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
-          {steps.map((step) => {
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto relative">
+          {steps.map((step, index) => {
             const StepIcon = step.icon;
             return (
-              <div key={step.number} className="text-center">
+              <div key={step.number} className="text-center relative">
                 {/* Step Number & Icon */}
                 <div className="relative mb-6 inline-block">
                   <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -64,7 +63,14 @@ const ProcessSteps = () => {
                   {step.description}
                 </p>
 
-
+                {/* Arrow connector */}
+                {index < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-8 -right-6 lg:-right-8 text-gray-300">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
               </div>
             );
           })}
