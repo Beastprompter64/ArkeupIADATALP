@@ -10,7 +10,6 @@ const Hero = () => {
     name: '',
     email: '',
     company: '',
-    company: '',
     phone: '',
     website: ''
   });
