@@ -370,7 +370,7 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white absolute top-full left-0 w-full shadow-lg py-4 px-4 animate-fadeIn">
           <nav className="flex flex-col space-y-4">
-            <div>
+            <div ref={useCasesRef}>
               <button
                 onClick={() => setIsUseCasesOpen(!isUseCasesOpen)}
                 className="text-arkeup-gray-700 hover:text-arkeup-orange transition-all transform hover:translate-y-[-2px] py-2 font-medium flex items-center w-full"
