@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, CheckCircle } from 'lucide-react';
 import Logo from './Logo';
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUseCasesOpen, setIsUseCasesOpen] = useState(false);
@@ -17,6 +18,7 @@ const Header = () => {
     website: ''
   });
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const useCasesRef = useRef<HTMLDivElement | null>(null);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +32,24 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close Use Cases dropdown when clicking/touching outside
+  useEffect(() => {
+    const onDocumentClick = (event: MouseEvent | TouchEvent) => {
+      if (!isUseCasesOpen) return;
+      const target = event.target as Node;
+      if (useCasesRef.current && !useCasesRef.current.contains(target)) {
+        setIsUseCasesOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', onDocumentClick);
+    document.addEventListener('touchstart', onDocumentClick);
+    return () => {
+      document.removeEventListener('mousedown', onDocumentClick);
+      document.removeEventListener('touchstart', onDocumentClick);
+    };
+  }, [isUseCasesOpen]);
 
   const handleUseCaseClick = (useCase: string) => {
     navigate(`/${useCase}`);
@@ -91,7 +111,7 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <div className="relative">
+          <div className="relative" ref={useCasesRef}>
             <button
               onClick={() => setIsUseCasesOpen(!isUseCasesOpen)}
               className="text-arkeup-gray-700 hover:text-african-violet transition-all duration-300 transform hover:translate-y-[-2px] hover:scale-105 font-medium flex items-center group"
@@ -139,7 +159,7 @@ const Header = () => {
                 </button>
                 <button
                   onClick={() => {
-                    navigate('/');
+                    navigate('/use-cases');
                     setIsUseCasesOpen(false);
                     setIsMenuOpen(false);
                   }}
@@ -152,10 +172,18 @@ const Header = () => {
             )}
           </div>
           
-          <a 
-            href="#expertise" 
+          <a
+            href="#expertise"
             onClick={(e) => {
               e.preventDefault();
+              // If we're not on the home page, navigate to home and pass a hint
+              // so HomePage can scroll to the expertise section after mount.
+              if (location.pathname !== '/') {
+                navigate('/', { state: { scrollTo: 'expertise' } });
+                setIsMenuOpen(false);
+                return;
+              }
+
               const expertiseSection = document.getElementById('expertise');
               if (expertiseSection) {
                 expertiseSection.scrollIntoView({ behavior: 'smooth' });
