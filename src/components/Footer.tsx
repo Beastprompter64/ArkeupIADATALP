@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src="/arkeup blanc.png" 
+                src="/arkeup blanc.webp" 
                 alt="Arkeup Logo" 
                 className="h-8 w-auto"
               />

@@ -97,7 +97,7 @@ const AboutUs = () => {
             <div className="mb-8 flex justify-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <img 
-                  src="/Rebranding Innovation-02.png" 
+                  src="/Rebranding Innovation-02.webp" 
                   alt="Arkeup Logo" 
                   className="h-16 w-auto mx-auto"
                 />

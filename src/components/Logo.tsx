@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Logo = () => {
@@ -10,7 +9,7 @@ const Logo = () => {
       className="flex items-center hover:opacity-80 transition-opacity"
     >
       <img 
-        src="/Rebranding Innovation-02.png" 
+        src="/Rebranding Innovation-02.webp" 
         alt="Arkeup Logo" 
         className="h-8 w-auto"
       />
