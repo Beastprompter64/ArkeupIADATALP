@@ -221,7 +221,7 @@ const Hero = () => {
           <div className="hidden lg:flex justify-end items-center pl-8">
             <div className="relative">
               <img 
-                src="/heroImage.png" 
+                src="/heroImage.webp" 
                 alt="Intelligence Artificielle - Cerveau connecté représentant nos solutions IA innovantes"
                 className={`w-96 h-96 object-contain animate-fadeInUp ${
                   imageFloating ? 'animate-float' : ''
