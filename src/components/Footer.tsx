@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="bg-gradient-to-br from-arkeup-gray-800 via-african-violet-900 to-blue-green-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
@@ -27,10 +30,36 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Ressources</h3>
             <ul className="space-y-2">
-              <li><a href="/use-cases" className="text-arkeup-gray-300 hover:bg-gradient-to-r hover:from-african-violet hover:to-blue-green hover:bg-clip-text hover:text-transparent transition-all duration-300 transform hover:translate-x-1">Études de cas</a></li>
+              <li>
+                <a
+                  href="/use-cases"
+                  onClick={(e) => { e.preventDefault(); navigate('/use-cases'); }}
+                  className="text-arkeup-gray-300 hover:bg-gradient-to-r hover:from-african-violet hover:to-blue-green hover:bg-clip-text hover:text-transparent transition-all duration-300 transform hover:translate-x-1"
+                >
+                  Études de cas
+                </a>
+              </li>
             </ul>
           </div>
-          
+
+          <div>
+            <h3 className="text-lg font-bold mb-4">Services</h3>
+            <ul className="space-y-2">
+              <li>
+                <button onClick={() => navigate('/agent-augmente')} className="text-arkeup-gray-300 hover:text-white transition-colors">Agent augmenté</button>
+              </li>
+              <li>
+                <button onClick={() => navigate('/ecommerce')} className="text-arkeup-gray-300 hover:text-white transition-colors">Assistant e‑commerce</button>
+              </li>
+              <li>
+                <button onClick={() => navigate('/geo-ai')} className="text-arkeup-gray-300 hover:text-white transition-colors">Geo AI</button>
+              </li>
+              <li>
+                <button onClick={() => navigate('/control-tower')} className="text-arkeup-gray-300 hover:text-white transition-colors">Control Tower</button>
+              </li>
+            </ul>
+          </div>
+
           <div>
             <h3 className="text-lg font-bold mb-4">Contact</h3>
             <ul className="space-y-2">
@@ -59,7 +88,7 @@ const Footer = () => {
         
         <div className="border-t border-arkeup-gray-700 pt-8 text-center">
           <p className="text-arkeup-gray-400 mb-4">
-            <a href="/mentions-legales" className="hover:text-white transition-colors">Mentions légales</a>
+            <a href="/mentions-legales" onClick={(e) => { e.preventDefault(); navigate('/mentions-legales'); }} className="hover:text-white transition-colors">Mentions légales</a>
           </p>
           <p className="text-arkeup-gray-400">
             © 2025 Arkeup. Tous droits réservés.
