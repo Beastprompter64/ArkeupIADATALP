@@ -15,28 +15,19 @@ const Footer = () => {
               Arkeup est une ESN spécialisée en intelligence artificielle, accompagnant les entreprises dans leur transformation numérique.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-arkeup-gray-300 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-3">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 5.16c-.406.95-1.072 1.787-1.855 2.46.018.31.018.62.018.93 0 9.46-7.246 20.36-20.36 20.36-4.04 0-7.8-1.177-10.96-3.2.587.067 1.14.067 1.747.067 3.386 0 6.5-1.148 8.994-3.086-3.17-.06-5.843-2.14-6.757-5.01.45.067.898.103 1.347.103.645 0 1.28-.09 1.878-.25-3.32-.667-5.825-3.586-5.825-7.09v-.092c.978.542 2.095.865 3.28.904-1.947-1.297-3.225-3.512-3.225-6.023 0-1.33.356-2.57.978-3.638 3.56 4.354 8.89 7.207 14.88 7.51-.12-.54-.17-1.1-.17-1.66 0-4.01 3.25-7.27 7.27-7.27 2.11 0 4 .89 5.33 2.3 1.67-.33 3.24-.95 4.65-1.8-.54 1.7-1.7 3.12-3.19 4.03 1.48-.17 2.9-.56 4.21-1.13-.98 1.46-2.22 2.74-3.65 3.77z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-arkeup-gray-300 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-3">
+              <a href="https://fr.linkedin.com/company/arkeup" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir la page LinkedIn d'Arkeup dans un nouvel onglet" className="text-arkeup-gray-300 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-3">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.23 0H1.77C.8 0 0 .8 0 1.77v20.46C0 23.2.8 24 1.77 24h20.46c.97 0 1.77-.8 1.77-1.77V1.77C24 .8 23.2 0 22.23 0zM7.17 20.42H3.58V9.01h3.59v11.41zm-1.8-12.96c-1.15 0-2.07-.93-2.07-2.07 0-1.14.92-2.07 2.07-2.07 1.14 0 2.07.93 2.07 2.07 0 1.14-.93 2.07-2.07 2.07zm16.06 12.96h-3.58v-5.55c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.97v5.64H9.25V9.01h3.44v1.57h.05c.48-.91 1.65-1.87 3.4-1.87 3.64 0 4.31 2.39 4.31 5.5v6.21z"/>
                 </svg>
               </a>
-              <a href="#" className="text-arkeup-gray-300 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-3">
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.11 0-.612.492-1.109 1.1-1.109.608 0 1.1.497 1.1 1.109 0 .614-.493 1.11-1.1 1.11zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
-                </svg>
-              </a>
+
             </div>
           </div>
           
           <div>
             <h3 className="text-lg font-bold mb-4">Ressources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-arkeup-gray-300 hover:bg-gradient-to-r hover:from-african-violet hover:to-blue-green hover:bg-clip-text hover:text-transparent transition-all duration-300 transform hover:translate-x-1">Études de cas</a></li>
+              <li><a href="/use-cases" className="text-arkeup-gray-300 hover:bg-gradient-to-r hover:from-african-violet hover:to-blue-green hover:bg-clip-text hover:text-transparent transition-all duration-300 transform hover:translate-x-1">Études de cas</a></li>
             </ul>
           </div>
           

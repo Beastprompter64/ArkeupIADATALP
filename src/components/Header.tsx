@@ -159,7 +159,7 @@ const Header = () => {
                 </button>
                 <button
                   onClick={() => {
-                    navigate('/');
+                    navigate('/use-cases');
                     setIsUseCasesOpen(false);
                     setIsMenuOpen(false);
                   }}
