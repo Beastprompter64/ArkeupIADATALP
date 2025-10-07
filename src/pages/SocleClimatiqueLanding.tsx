@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CheckCircle, XCircle, MapPin, TrendingUp, BarChart3, Shield, ArrowRight, Target, Globe, Database, FileText, AlertTriangle, ChevronDown, ChevronUp, Zap, Users, Brain, Map, Eye, Settings, Download, X } from 'lucide-react';
-import Header from './Header';
-import Footer from './Footer';
+import { CheckCircle, MapPin, TrendingUp, BarChart3, Shield, Target, Globe, Database, AlertTriangle, Zap, Users, Brain, Map, Eye, Settings} from 'lucide-react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import NeuralNetworkBackground from './NeuralNetworkBackground';
 
 const SocleClimatiqueLanding = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',

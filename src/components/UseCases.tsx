@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const UseCases = () => {
@@ -72,11 +72,18 @@ const UseCases = () => {
   return (
     <section ref={sectionRef} className="py-16 md:py-24 bg-gradient-to-br from-african-violet-50 via-blue-green-50 to-african-violet-100" id="use-cases">
       <div className="container mx-auto px-4 md:px-8">
+        {/* Priorité 3 : Style moderne avec badge */}
         <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-african-violet/10 to-blue-green/10 backdrop-blur-sm rounded-full border border-african-violet/20 shadow-lg mb-8">
+            <div className="w-3 h-3 bg-gradient-to-r from-african-violet to-blue-green rounded-full animate-pulse"></div>
+            <span className="text-sm font-bold text-african-violet uppercase tracking-wider">
+              🚀 Solutions IA Innovantes
+            </span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">
             Nos Use Cases
           </h2>
-          <p className="text-arkeup-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-arkeup-gray-600 max-w-2xl mx-auto">
             Découvrez comment nos solutions d'intelligence artificielle répondent à des problématiques concrètes et créent de la valeur ajoutée pour nos clients.
           </p>
         </div>
@@ -140,7 +147,7 @@ const UseCases = () => {
               </p>
               <div className="mt-4">
                 <button 
-                  onClick={() => navigate('/')}
+                  onClick={() => navigate('/use-cases')}
                   className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent hover:from-blue-green hover:to-african-violet font-medium inline-flex items-center transition-all duration-300 transform hover:translate-x-1 hover:scale-105 group"
                 >
                   Découvrir

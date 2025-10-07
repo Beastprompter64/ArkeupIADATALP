@@ -106,8 +106,18 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" aria-label="Statistiques clés">
+    <section className="py-16 md:py-20 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" aria-label="Statistiques clés">
       <div className="container mx-auto px-4 md:px-8">
+        {/* Priorité 5 : Style discret et informatif */}
+        <div className="text-center mb-12">
+          <h3 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-2">
+            Les chiffres qui parlent
+          </h3>
+          <p className="text-gray-500">
+            Notre expertise reconnue se traduit par des résultats concrets
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <StatCard key={index} {...stat} />

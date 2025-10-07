@@ -1,19 +1,24 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+
+// Components
 import Header from './components/Header';
 import Hero from './components/Hero';
 import References from './components/References';
-import Stats from './components/Stats';
+import ProcessSteps from './components/ProcessSteps';
 import UseCases from './components/UseCases';
 import Expertise from './components/Expertise';
 import Footer from './components/Footer';
-import EcommerceLanding from './components/EcommerceLanding';
-import AboutUs from './components/AboutUs';
-import AgentAugmenteLanding from './components/AgentAugmenteLanding';
-import SocleClimatiqueLanding from './components/SocleClimatiqueLanding';
-import ControlTowerLanding from './components/ControlTowerLanding';
-import GeoAILanding from './components/GeoAILanding';
-import LegalNotice from './components/LegalNotice';
+import EcommerceLanding from './pages/EcommerceLanding';
+
+// Pages
+import AboutUs from './pages/AboutUs';
+import AgentAugmenteLanding from './pages/AgentAugmenteLanding';
+import SocleClimatiqueLanding from './pages/SocleClimatiqueLanding';
+import ControlTowerLanding from './pages/ControlTowerLanding';
+import GeoAILanding from './pages/GeoAILanding';
+import LegalNotice from './pages/LegalNotice';
+import AllUseCases from './pages/AllUseCases';
 
 function HomePage() {
   return (
@@ -21,9 +26,9 @@ function HomePage() {
       <Header />
       <main>
         <Hero />
-        <References />
-        <Stats />
+        <ProcessSteps />
         <UseCases />
+        <References />
         <Expertise />
       </main>
       <Footer />
@@ -48,6 +53,7 @@ function App() {
       <Route path="/control-tower" element={<ControlTowerLanding />} />
       <Route path="/geo-ai" element={<GeoAILanding />} />
       <Route path="/mentions-legales" element={<LegalNotice />} />
+      <Route path="/use-cases" element={<AllUseCases />} />
     </Routes>
   );
 }

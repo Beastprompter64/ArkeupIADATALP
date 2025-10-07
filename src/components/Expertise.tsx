@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Shield, Target, TrendingUp, Users } from 'lucide-react';
 import { X, CheckCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 const Expertise = () => {
-  const navigate = useNavigate();
   const [showRoiForm, setShowRoiForm] = useState(false);
   const [roiFormData, setRoiFormData] = useState({
     name: '',
@@ -95,35 +93,43 @@ const Expertise = () => {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50" id="expertise">
       <div className="container mx-auto px-4 md:px-8">
+        {/* Priorité 6 : Style sophistiqué pour l'approfondissement */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-green to-african-violet bg-clip-text text-transparent">
-            L'expertise Arkeup
+          <div className="flex items-center justify-center mb-6">
+            <div className="h-px bg-gradient-to-r from-transparent via-african-violet to-transparent w-24"></div>
+            <span className="mx-4 text-sm font-medium text-african-violet bg-white px-3 py-1 rounded-full border border-african-violet/20">
+              EXPERTISE
+            </span>
+            <div className="h-px bg-gradient-to-r from-transparent via-blue-green to-transparent w-24"></div>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            L'expertise <span className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">Arkeup</span>
           </h2>
-          <p className="text-arkeup-gray-600 max-w-2xl mx-auto">
-            Une approche unique de l'IA, validée par les plus grands acteurs du marché.
+          <p className="text-lg text-arkeup-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Une approche unique de l'IA, validée par les plus grands acteurs du marché et éprouvée sur le terrain.
           </p>
         </div>
         
-        <div className="space-y-24">
+        <div className="space-y-20">
           {expertiseAreas.map((area, index) => (
             <div 
               key={index}
               className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}
             >
               <div className="lg:w-1/2">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl transform transition-all hover:scale-110 hover:shadow-2xl hover:rotate-1 duration-500 group cursor-pointer">
+                <div className="relative rounded-2xl overflow-hidden shadow-lg transform transition-all hover:scale-[1.03] hover:shadow-xl duration-500 group cursor-pointer">
                   <img 
                     src={area.image} 
                     alt={area.title}
-                    className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-125 group-hover:brightness-110"
+                    className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent opacity-60 group-hover:opacity-80 transition-all duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-all duration-500"></div>
                   <div className="absolute bottom-6 left-6 text-white">
                     <area.icon className="w-8 h-8 mb-3 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12" />
                     <h3 className="text-xl font-semibold transition-transform duration-300 group-hover:translate-y-[-2px]">{area.title}</h3>
                   </div>
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
-                    <div className="bg-arkeup-orange text-white p-2 rounded-full">
+                    <div className="bg-white/20 text-white p-2 rounded-full border border-white/30 backdrop-blur-sm">
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                       </svg>
@@ -134,8 +140,7 @@ const Expertise = () => {
 
               <div className="lg:w-1/2">
                 <h3 className="text-2xl font-bold mb-2 text-arkeup-gray-800">{area.title}</h3>
-                <h4 className="text-xl text-arkeup-orange font-medium mb-4">{area.subtitle}</h4>
-                <h4 className="text-xl text-blue-green font-medium mb-4">{area.subtitle}</h4>
+                <h4 className={`text-xl font-medium mb-4 ${index % 2 === 0 ? 'text-blue-green' : 'text-african-violet'}`}>{area.subtitle}</h4>
                 <p className="text-arkeup-gray-600 leading-relaxed">{area.description}</p>
               </div>
             </div>

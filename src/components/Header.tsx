@@ -12,7 +12,7 @@ const Header = () => {
   const [contactFormData, setContactFormData] = useState({
     name: '',
     email: '',
-    company: '',
+    company: '', 
     phone: '',
     website: ''
   });

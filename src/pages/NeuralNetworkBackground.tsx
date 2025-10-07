@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 const NeuralNetworkBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -21,7 +21,6 @@ const NeuralNetworkBackground = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;

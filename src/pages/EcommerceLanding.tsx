@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { CheckCircle, XCircle, Search, TrendingUp, Zap, Shield, ArrowRight, X, ShoppingCart, Plus, BarChart3 } from 'lucide-react';
-import Header from './Header';
-import Footer from './Footer';
+import { CheckCircle, XCircle, Search, TrendingUp, Zap, Shield, ShoppingCart, Plus, BarChart3 } from 'lucide-react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 interface DemoState {
   currentScene: number;
@@ -16,7 +15,6 @@ interface DemoState {
 }
 
 const EcommerceLanding = () => {
-  const navigate = useNavigate();
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [formData, setFormData] = useState({
     name: '',

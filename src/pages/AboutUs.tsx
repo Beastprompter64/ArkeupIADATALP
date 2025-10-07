@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Target, Users, Lightbulb, Award, ArrowRight, CheckCircle } from 'lucide-react';
-import Header from './Header'; 
-import Footer from './Footer';
+import Header from '../components/Header'; 
+import Footer from '../components/Footer';
 import NeuralNetworkBackground from './NeuralNetworkBackground';
 
 const AboutUs = () => {
@@ -97,7 +97,7 @@ const AboutUs = () => {
             <div className="mb-8 flex justify-center">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
                 <img 
-                  src="/Rebranding Innovation-02.png" 
+                  src="/Rebranding Innovation-02.webp" 
                   alt="Arkeup Logo" 
                   className="h-16 w-auto mx-auto"
                 />
@@ -247,11 +247,11 @@ const AboutUs = () => {
                 key={index}
                 className="bg-arkeup-gray-50 rounded-xl p-8 hover:shadow-lg transition-all transform hover:scale-[1.02]"
               >
-                <div className={`mb-6 p-4 ${
+                <div className={`${
                   index % 2 === 0 
                     ? 'bg-african-violet-100 text-african-violet' 
                     : 'bg-blue-green-100 text-blue-green'
-                } rounded-full w-16 h-16 flex items-center justify-center`}>
+                } rounded-full w-16 h-16 flex items-center justify-center mb-6 p-4`}>
                   <value.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-arkeup-gray-800 mb-4">{value.title}</h3>
