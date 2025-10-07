@@ -239,17 +239,22 @@ const Hero = () => {
       {/* Enhanced ROI Form Popup */}
       {showRoiForm && (
         <div 
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn"
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-start sm:items-center justify-center z-50 p-4 animate-fadeIn"
           onClick={(e) => {
             if (e.target === e.currentTarget) {
               setShowRoiForm(false);
             }
           }}
         >
-          <div className="bg-white rounded-3xl shadow-2xl max-w-xl w-full transform transition-all duration-300 scale-100">
-            <div className="flex items-center justify-between p-6 border-b border-gray-100">
+          <div
+            className="bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[85vh] sm:max-h-[90vh] flex flex-col transform transition-all duration-300 scale-100"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="roi-dialog-title"
+          >
+            <div className="flex items-center justify-between p-6 border-b border-gray-100 flex-shrink-0">
               <div>
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">
+                <h3 id="roi-dialog-title" className="text-2xl font-bold bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">
                   Demander votre étude ROI
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">Recevez votre analyse personnalisée en 24h</p>
@@ -262,7 +267,7 @@ const Hero = () => {
                 <X className="w-6 h-6 text-gray-500" />
               </button>
             </div>
-            <div className="px-6 pb-6">
+            <div className="p-6 overflow-y-auto overscroll-contain [-webkit-overflow-scrolling:touch]">
               <div className="mb-5">
                 <h4 className="text-lg font-semibold text-arkeup-gray-800 mb-4">
                   Obtenez votre analyse ROI personnalisée
