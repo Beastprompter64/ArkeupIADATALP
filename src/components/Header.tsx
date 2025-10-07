@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, CheckCircle } from 'lucide-react';
 import Logo from './Logo';
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isUseCasesOpen, setIsUseCasesOpen] = useState(false);
@@ -152,10 +153,18 @@ const Header = () => {
             )}
           </div>
           
-          <a 
-            href="#expertise" 
+          <a
+            href="#expertise"
             onClick={(e) => {
               e.preventDefault();
+              // If we're not on the home page, navigate to home and pass a hint
+              // so HomePage can scroll to the expertise section after mount.
+              if (location.pathname !== '/') {
+                navigate('/', { state: { scrollTo: 'expertise' } });
+                setIsMenuOpen(false);
+                return;
+              }
+
               const expertiseSection = document.getElementById('expertise');
               if (expertiseSection) {
                 expertiseSection.scrollIntoView({ behavior: 'smooth' });

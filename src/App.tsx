@@ -21,6 +21,27 @@ import LegalNotice from './pages/LegalNotice';
 import AllUseCases from './pages/AllUseCases';
 
 function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // If navigation included a scroll hint, scroll to that section after mount
+    const state: any = location.state as any;
+    if (state && state.scrollTo) {
+      const el = document.getElementById(state.scrollTo);
+      if (el) {
+        // slight delay to ensure layout and header height
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 50);
+      }
+
+      // clear the history state so subsequent navigations don't auto-scroll
+      try {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      } catch (e) {
+        // ignore
+      }
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-arkeup-gray-50 text-arkeup-gray-800 font-sans">
       <Header />
