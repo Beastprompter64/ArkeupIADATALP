@@ -10,6 +10,7 @@ import UseCases from './components/UseCases';
 import Expertise from './components/Expertise';
 import Footer from './components/Footer';
 import EcommerceLanding from './pages/EcommerceLanding';
+import SupportAutomationLanding from './pages/SupportAutomationLanding';
 
 // Pages
 import AboutUs from './pages/AboutUs';
@@ -68,6 +69,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/ecommerce" element={<EcommerceLanding />} />
+  <Route path="/audit-performance" element={<SupportAutomationLanding />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/agent-augmente" element={<AgentAugmenteLanding />} />
       <Route path="/socle-climatique" element={<SocleClimatiqueLanding />} />
