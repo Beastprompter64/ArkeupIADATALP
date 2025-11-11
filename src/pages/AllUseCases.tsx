@@ -15,6 +15,14 @@ const AllUseCases = () => {
       accent: 'from-blue-50 to-blue-100 text-blue-700 border-blue-200',
     },
     {
+      title: 'Automatisation du Support',
+      description:
+        "Divisez par 12 votre temps de réponse. Notre IA gère 100% de vos requêtes Niveau 0 & 1 en 30 secondes.",
+      icon: '💬',
+      to: '/audit-performance',
+      accent: 'from-indigo-50 to-indigo-100 text-indigo-700 border-indigo-200',
+    },
+    {
       title: 'Agent augmenté',
       description:
         "Décuplez l'efficacité de vos équipes support avec des copilotes IA qui augmentent les capacités de vos agents.",

@@ -44,6 +44,12 @@ const UseCases = () => {
       color: 'bg-blue-50 text-blue-500 border-blue-100'
     },
     {
+      title: 'Automatisation du Support',
+      description: 'Divisez par 12 votre temps de réponse client. Notre IA gère 100% de vos requêtes Niveau 0 & 1 en 30 secondes, réduisant vos coûts et améliorant la satisfaction client.',
+      icon: '💬',
+      color: 'bg-indigo-50 text-indigo-500 border-indigo-100'
+    },
+    {
       title: 'Agent augmenté',
       description: 'Décuplez l\'efficacité de vos équipes support avec nos solutions de copilotes IA qui augmentent les capacités de vos agents tout en réduisant leur charge cognitive.',
       icon: '🤖',
@@ -60,12 +66,6 @@ const UseCases = () => {
       description: 'Exploitez la puissance de l\'intelligence artificielle géospatiale pour analyser, prédire et optimiser vos décisions basées sur la localisation et les données territoriales.',
       icon: '🗺️',
       color: 'bg-purple-50 text-purple-500 border-purple-100'
-    },
-    {
-      title: 'Control Tower',
-      description: 'Centralisez la gouvernance de vos projets IA avec notre plateforme unifiée de MLOps qui assure performance, conformité et sécurité de bout en bout.',
-      icon: '🎯',
-      color: 'bg-orange-50 text-orange-500 border-orange-100'
     }
   ];
 
@@ -107,6 +107,8 @@ const UseCases = () => {
                 onClick={() => {
                   if (useCase.title === 'Assistant e-commerce') {
                     navigate('/ecommerce');
+                  } else if (useCase.title === 'Automatisation du Support') {
+                    navigate('/audit-performance');
                   } else if (useCase.title === 'Agent augmenté') {
                     navigate('/agent-augmente');
                   } else if (useCase.title === 'Socle Climatique') {
