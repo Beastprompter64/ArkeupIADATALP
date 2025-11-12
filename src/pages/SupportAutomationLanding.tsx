@@ -107,22 +107,37 @@ const SupportAutomationLanding = () => {
         <section className="relative border-t border-arkeup-gray-200 bg-gradient-to-b from-african-violet-50/50 to-white py-20">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-green-50/30 to-transparent"></div>
           <div className="relative mx-auto max-w-5xl px-6 text-center lg:px-8">
-            <h2 className="text-2xl font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-african-violet-700">
-              Ils gèrent des millions de clients avec une IA sur mesure.
+            <h2 className="text-2xl font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-african-violet-700 mb-4">
+              Ils nous font confiance
             </h2>
+            <p className="text-base text-arkeup-gray-600 mb-12">
+              Des leaders du retail qui transforment leur support client avec l'IA
+            </p>
+            
             <div className="mt-12 flex flex-col items-center justify-center gap-8 sm:flex-row">
-              <div className="group relative inline-flex h-20 items-center justify-center rounded-2xl border border-arkeup-gray-200 bg-white px-12 shadow-lg transition-all hover:border-blue-green-500/50 hover:shadow-xl">
+              <div className="group relative inline-flex h-24 w-48 items-center justify-center rounded-2xl border border-arkeup-gray-200 bg-white/90 backdrop-blur-sm px-8 shadow-lg transition-all hover:border-blue-green-500/50 hover:shadow-xl hover:scale-105">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-green-500/0 to-blue-green-500/0 opacity-0 transition-opacity group-hover:from-blue-green-500/10 group-hover:to-african-violet-500/10 group-hover:opacity-100"></div>
-                <span className="relative text-2xl font-bold text-arkeup-gray-900">Kiabi</span>
+                <div className="relative w-full h-full flex items-center justify-center p-5">
+                  <img 
+                    src="https://images2.imgbox.com/2d/1e/BFa3yH4k_o.png" 
+                    alt="Kiabi" 
+                    className="max-w-full max-h-full object-contain filter grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-              <div className="group relative inline-flex h-20 items-center justify-center rounded-2xl border border-arkeup-gray-200 bg-white px-12 shadow-lg transition-all hover:border-african-violet-500/50 hover:shadow-xl">
+              <div className="group relative inline-flex h-24 w-48 items-center justify-center rounded-2xl border border-arkeup-gray-200 bg-white/90 backdrop-blur-sm px-8 shadow-lg transition-all hover:border-african-violet-500/50 hover:shadow-xl hover:scale-105">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-african-violet-500/0 to-african-violet-500/0 opacity-0 transition-opacity group-hover:from-african-violet-500/10 group-hover:to-blue-green-500/10 group-hover:opacity-100"></div>
-                <span className="relative text-2xl font-bold text-arkeup-gray-900">Fnac Darty</span>
+                <div className="relative w-full h-full flex items-center justify-center p-5">
+                  <img 
+                    src="https://images2.imgbox.com/4e/a4/XvRzZtCG_o.png" 
+                    alt="Fnac Darty" 
+                    className="max-w-full max-h-full object-contain filter grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
-            <p className="mt-8 text-sm text-arkeup-gray-600">
-              Logos utilisés à titre illustratif - Exemples de leaders du retail utilisant l'IA
-            </p>
           </div>
         </section>
 
