@@ -68,8 +68,8 @@ const SupportAutomationLanding = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-arkeup-orange/5 to-arkeup-orange/5"></div>
           <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-blue-green-500/30 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-african-violet-500/30 blur-3xl"></div>
-          <div className="relative z-10 mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-2 lg:px-8">
-            <div className="space-y-8 animate-fade-in">
+          <div className="relative z-10 mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-2 lg:px-8 lg:items-center">
+            <div className="space-y-8 animate-fade-in flex flex-col justify-center">
               <h1 className="text-4xl font-semibold leading-tight tracking-tight text-arkeup-gray-900 sm:text-5xl lg:text-6xl">
                 <span className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent animate-gradient">
                   Vos clients attendent 6 minutes pour une réponse ?
@@ -90,9 +90,9 @@ const SupportAutomationLanding = () => {
                 </a>
               </div>
             </div>
-            <div className="relative group">
+            <div className="relative group flex items-center justify-center">
               <div className="absolute inset-0 rounded-[48px] border border-african-violet-200/30 bg-gradient-to-br from-blue-green-500/20 via-transparent to-african-violet-500/20 blur-3xl group-hover:blur-2xl transition-all"></div>
-              <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur hover:shadow-[0_50px_150px_-50px_rgba(130,87,229,0.4)] transition-all duration-500">
+              <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur hover:shadow-[0_50px_150px_-50px_rgba(130,87,229,0.4)] transition-all duration-500 w-full">
                 <img 
                   src="https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="IA automatisant le support client"
@@ -305,7 +305,7 @@ const SupportAutomationLanding = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div className="space-y-6">
+              <div className="space-y-6 flex flex-col justify-center">
                 <div className="rounded-2xl border-2 border-blue-green-200 bg-white p-6 shadow-lg hover:shadow-xl hover:border-blue-green-400 transition-all hover:-translate-y-1">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -362,7 +362,7 @@ const SupportAutomationLanding = () => {
                 </div>
               </div>
 
-              <div className="rounded-3xl border-2 border-blue-green-300 bg-white p-8 shadow-2xl hover:shadow-3xl transition-all sticky top-24">
+              <div className="rounded-3xl border-2 border-blue-green-300 bg-white p-8 shadow-2xl hover:shadow-3xl transition-all lg:sticky lg:top-24 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-arkeup-gray-900 mb-6 text-center">
                   Réserver mon Audit Gratuit
                 </h3>
