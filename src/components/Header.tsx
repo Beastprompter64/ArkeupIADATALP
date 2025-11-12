@@ -130,7 +130,7 @@ const Header = () => {
                   <div className="text-sm text-arkeup-gray-500">Optimisez votre conversion</div>
                 </button>
                 <button
-                  onClick={() => handleUseCaseClick('audit-performance')}
+                  onClick={() => handleUseCaseClick('support-automation')}
                   className="w-full text-left px-4 py-3 text-arkeup-gray-700 hover:bg-blue-green-50 hover:text-blue-green transition-all duration-300 transform hover:translate-x-1 hover:shadow-sm rounded-lg"
                 >
                   <div className="font-medium">Automatisation du Support</div>
@@ -395,7 +395,7 @@ const Header = () => {
                     Assistant e-commerce
                   </button>
                   <button
-                    onClick={() => handleUseCaseClick('audit-performance')}
+                    onClick={() => handleUseCaseClick('support-automation')}
                     className="block text-arkeup-gray-600 hover:text-blue-green transition-all transform hover:translate-y-[-1px] py-1 text-sm"
                   >
                     Automatisation du Support

@@ -19,7 +19,7 @@ const AllUseCases = () => {
       description:
         "Divisez par 12 votre temps de réponse. Notre IA gère 100% de vos requêtes Niveau 0 & 1 en 30 secondes.",
       icon: '💬',
-      to: '/audit-performance',
+      to: '/support-automation',
       accent: 'from-indigo-50 to-indigo-100 text-indigo-700 border-indigo-200',
     },
     {

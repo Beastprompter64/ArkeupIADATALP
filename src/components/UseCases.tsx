@@ -108,7 +108,7 @@ const UseCases = () => {
                   if (useCase.title === 'Assistant e-commerce') {
                     navigate('/ecommerce');
                   } else if (useCase.title === 'Automatisation du Support') {
-                    navigate('/audit-performance');
+                    navigate('/support-automation');
                   } else if (useCase.title === 'Agent augmenté') {
                     navigate('/agent-augmente');
                   } else if (useCase.title === 'Socle Climatique') {

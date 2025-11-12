@@ -69,7 +69,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/ecommerce" element={<EcommerceLanding />} />
-  <Route path="/audit-performance" element={<SupportAutomationLanding />} />
+  <Route path="/support-automation" element={<SupportAutomationLanding />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/agent-augmente" element={<AgentAugmenteLanding />} />
       <Route path="/socle-climatique" element={<SocleClimatiqueLanding />} />
