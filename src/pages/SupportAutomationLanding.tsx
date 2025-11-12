@@ -68,38 +68,41 @@ const SupportAutomationLanding = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-arkeup-orange/5 to-arkeup-orange/5"></div>
           <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-blue-green-500/30 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-african-violet-500/30 blur-3xl"></div>
-          <div className="relative z-10 mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-2 lg:px-8 lg:items-center">
-            <div className="space-y-8 animate-fade-in flex flex-col justify-center">
-              <h1 className="text-4xl font-semibold leading-tight tracking-tight text-arkeup-gray-900 sm:text-5xl lg:text-6xl">
+          <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:items-center">
+            {/* Image - Shows first on mobile, second on desktop */}
+            <div className="relative group flex items-center justify-center order-1 lg:order-2">
+              <div className="absolute inset-0 rounded-[48px] border border-african-violet-200/30 bg-gradient-to-br from-blue-green-500/20 via-transparent to-african-violet-500/20 blur-3xl group-hover:blur-2xl transition-all"></div>
+              <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-6 sm:p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur hover:shadow-[0_50px_150px_-50px_rgba(130,87,229,0.4)] transition-all duration-500 w-full">
+                <img 
+                  src="https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="IA automatisant le support client"
+                  className="w-full h-64 sm:h-80 object-cover rounded-[32px] border border-african-violet-200/30 transform group-hover:scale-[1.02] transition-transform duration-500"
+                  loading="eager"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-african-violet-900/10 to-transparent rounded-[32px]"></div>
+              </div>
+            </div>
+            
+            {/* Text Content - Shows second on mobile, first on desktop */}
+            <div className="space-y-6 sm:space-y-8 animate-fade-in flex flex-col justify-center order-2 lg:order-1">
+              <h1 className="text-3xl font-semibold leading-tight tracking-tight text-arkeup-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
                 <span className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent animate-gradient">
                   Vos clients attendent 6 minutes pour une réponse ?
                 </span>
               </h1>
-              <p className="text-lg leading-relaxed text-arkeup-gray-700 sm:text-xl">
+              <p className="text-base leading-relaxed text-arkeup-gray-700 sm:text-lg lg:text-xl">
                 Divisez par 12 votre temps de réponse. Notre IA gère 100% de vos requêtes Niveau 0 & 1 en 30 secondes.
               </p>
-              <p className="text-base font-medium text-arkeup-orange-600 bg-arkeup-orange-100 px-4 py-2 rounded-lg inline-block sm:text-lg border-l-4 border-arkeup-orange-600 shadow-md">
+              <p className="text-sm font-medium text-arkeup-orange-600 bg-arkeup-orange-100 px-4 py-3 rounded-lg inline-block sm:text-base lg:text-lg border-l-4 border-arkeup-orange-600 shadow-md">
                 Chaque minute d'attente vous coûte des clients et gonfle vos coûts de support.
               </p>
-              <div className="pt-4 flex flex-col sm:flex-row gap-4">
+              <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row gap-4">
                 <a
                   href="#cta-final"
-                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-center text-base font-semibold text-white shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:from-african-violet-500 hover:to-blue-green-500"
+                  className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-6 py-3 sm:px-8 sm:py-4 text-center text-sm sm:text-base font-semibold text-white shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:from-african-violet-500 hover:to-blue-green-500"
                 >
                   Demander votre Audit de Performance (Gratuit)
                 </a>
-              </div>
-            </div>
-            <div className="relative group flex items-center justify-center">
-              <div className="absolute inset-0 rounded-[48px] border border-african-violet-200/30 bg-gradient-to-br from-blue-green-500/20 via-transparent to-african-violet-500/20 blur-3xl group-hover:blur-2xl transition-all"></div>
-              <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur hover:shadow-[0_50px_150px_-50px_rgba(130,87,229,0.4)] transition-all duration-500 w-full">
-                <img 
-                  src="https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="IA automatisant le support client"
-                  className="w-full h-80 object-cover rounded-[32px] border border-african-violet-200/30 transform group-hover:scale-[1.02] transition-transform duration-500"
-                  loading="eager"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-african-violet-900/10 to-transparent rounded-[32px]"></div>
               </div>
             </div>
           </div>
