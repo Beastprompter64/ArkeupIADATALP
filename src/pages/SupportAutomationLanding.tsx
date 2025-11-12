@@ -69,19 +69,19 @@ const SupportAutomationLanding = () => {
           <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-blue-green-500/30 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-african-violet-500/30 blur-3xl"></div>
           <div className="relative z-10 mx-auto grid max-w-6xl gap-16 px-6 lg:grid-cols-2 lg:px-8">
-            <div className="space-y-8">
+            <div className="space-y-8 animate-fade-in">
               <h1 className="text-4xl font-semibold leading-tight tracking-tight text-arkeup-gray-900 sm:text-5xl lg:text-6xl">
-                <span className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent animate-gradient">
                   Vos clients attendent 6 minutes pour une réponse ?
                 </span>
               </h1>
               <p className="text-lg leading-relaxed text-arkeup-gray-700 sm:text-xl">
                 Divisez par 12 votre temps de réponse. Notre IA gère 100% de vos requêtes Niveau 0 & 1 en 30 secondes.
               </p>
-              <p className="text-base font-medium text-arkeup-orange-600 bg-arkeup-orange-100 px-4 py-2 rounded-lg inline-block sm:text-lg">
+              <p className="text-base font-medium text-arkeup-orange-600 bg-arkeup-orange-100 px-4 py-2 rounded-lg inline-block sm:text-lg border-l-4 border-arkeup-orange-600 shadow-md">
                 Chaque minute d'attente vous coûte des clients et gonfle vos coûts de support.
               </p>
-              <div className="pt-4">
+              <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <a
                   href="#cta-final"
                   className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-center text-base font-semibold text-white shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:from-african-violet-500 hover:to-blue-green-500"
@@ -90,13 +90,14 @@ const SupportAutomationLanding = () => {
                 </a>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 rounded-[48px] border border-african-violet-200/30 bg-gradient-to-br from-blue-green-500/20 via-transparent to-african-violet-500/20 blur-3xl"></div>
-              <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur">
+            <div className="relative group">
+              <div className="absolute inset-0 rounded-[48px] border border-african-violet-200/30 bg-gradient-to-br from-blue-green-500/20 via-transparent to-african-violet-500/20 blur-3xl group-hover:blur-2xl transition-all"></div>
+              <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur hover:shadow-[0_50px_150px_-50px_rgba(130,87,229,0.4)] transition-all duration-500">
                 <img 
                   src="https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="IA automatisant le support client"
-                  className="w-full h-80 object-cover rounded-[32px] border border-african-violet-200/30"
+                  className="w-full h-80 object-cover rounded-[32px] border border-african-violet-200/30 transform group-hover:scale-[1.02] transition-transform duration-500"
+                  loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-african-violet-900/10 to-transparent rounded-[32px]"></div>
               </div>
@@ -108,32 +109,32 @@ const SupportAutomationLanding = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-green-50/30 to-transparent"></div>
           <div className="relative mx-auto max-w-5xl px-6 text-center lg:px-8">
             <h2 className="text-2xl font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-african-violet-700 mb-4">
-              Ils nous font confiance
+              Ils gèrent des millions de clients avec une IA sur mesure.
             </h2>
             <p className="text-base text-arkeup-gray-600 mb-12">
               Des leaders du retail qui transforment leur support client avec l'IA
             </p>
             
             <div className="mt-12 flex flex-col items-center justify-center gap-8 sm:flex-row">
-              <div className="group relative inline-flex h-24 w-48 items-center justify-center rounded-2xl border border-arkeup-gray-200 bg-white/90 backdrop-blur-sm px-8 shadow-lg transition-all hover:border-blue-green-500/50 hover:shadow-xl hover:scale-105">
+              <div className="group relative inline-flex h-24 w-48 items-center justify-center rounded-2xl border-2 border-arkeup-gray-200 bg-white/90 backdrop-blur-sm px-8 shadow-lg transition-all hover:border-blue-green-500/50 hover:shadow-2xl hover:scale-110 duration-300">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-green-500/0 to-blue-green-500/0 opacity-0 transition-opacity group-hover:from-blue-green-500/10 group-hover:to-african-violet-500/10 group-hover:opacity-100"></div>
                 <div className="relative w-full h-full flex items-center justify-center p-5">
                   <img 
                     src="https://images2.imgbox.com/2d/1e/BFa3yH4k_o.png" 
                     alt="Kiabi" 
                     className="max-w-full max-h-full object-contain filter grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
-                    loading="lazy"
+                    loading="eager"
                   />
                 </div>
               </div>
-              <div className="group relative inline-flex h-24 w-48 items-center justify-center rounded-2xl border border-arkeup-gray-200 bg-white/90 backdrop-blur-sm px-8 shadow-lg transition-all hover:border-african-violet-500/50 hover:shadow-xl hover:scale-105">
+              <div className="group relative inline-flex h-24 w-48 items-center justify-center rounded-2xl border-2 border-arkeup-gray-200 bg-white/90 backdrop-blur-sm px-8 shadow-lg transition-all hover:border-african-violet-500/50 hover:shadow-2xl hover:scale-110 duration-300">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-african-violet-500/0 to-african-violet-500/0 opacity-0 transition-opacity group-hover:from-african-violet-500/10 group-hover:to-blue-green-500/10 group-hover:opacity-100"></div>
                 <div className="relative w-full h-full flex items-center justify-center p-5">
                   <img 
                     src="https://images2.imgbox.com/4e/a4/XvRzZtCG_o.png" 
                     alt="Fnac Darty" 
                     className="max-w-full max-h-full object-contain filter grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
-                    loading="lazy"
+                    loading="eager"
                   />
                 </div>
               </div>
@@ -148,8 +149,8 @@ const SupportAutomationLanding = () => {
               Arrêtez de payer des humains pour copier-coller des réponses.
             </h2>
             <div className="mt-12 grid gap-10 lg:grid-cols-2">
-              <div className="group rounded-3xl border border-red-200 bg-red-50/50 p-10 shadow-lg transition-all hover:border-red-400 hover:shadow-xl">
-                <h3 className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-red-700 mb-6">
+              <div className="group rounded-3xl border-2 border-red-300 bg-red-50/50 p-10 shadow-lg transition-all hover:border-red-400 hover:shadow-2xl hover:-translate-y-1">
+                <h3 className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-red-700 mb-6 flex items-center gap-2">
                   Le Problème - Ce qu'ils font maintenant
                 </h3>
                 <ul className="mt-8 space-y-5 text-base leading-relaxed text-arkeup-gray-700">
@@ -171,8 +172,8 @@ const SupportAutomationLanding = () => {
                   </li>
                 </ul>
               </div>
-              <div className="group rounded-3xl border border-blue-green-200 bg-gradient-to-br from-blue-green-50/50 via-white to-african-violet-50/50 p-10 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-xl">
-                <h3 className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-blue-green-700 mb-6">
+              <div className="group rounded-3xl border-2 border-blue-green-300 bg-gradient-to-br from-blue-green-50/50 via-white to-african-violet-50/50 p-10 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
+                <h3 className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-blue-green-700 mb-6 flex items-center gap-2">
                   La Solution - Ce qu'ils auront
                 </h3>
                 <ul className="mt-8 space-y-5 text-base leading-relaxed text-arkeup-gray-700">
@@ -210,9 +211,9 @@ const SupportAutomationLanding = () => {
               </p>
             </div>
             <div className="mt-14 grid gap-8 md:grid-cols-2">
-              <div className="group rounded-3xl border border-blue-green-200 bg-white p-8 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-xl">
+              <div className="group rounded-3xl border-2 border-blue-green-200 bg-white p-8 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-2xl hover:-translate-y-1">
                 <div className="flex items-start gap-6">
-                  <div className="rounded-2xl border border-blue-green-400 bg-blue-green-50 p-6 transition-all group-hover:bg-blue-green-100">
+                  <div className="rounded-2xl border border-blue-green-400 bg-blue-green-50 p-6 transition-all group-hover:bg-blue-green-100 group-hover:scale-110 group-hover:rotate-3">
                     <Database className="h-12 w-12 text-blue-green-600" />
                   </div>
                   <div>
@@ -223,9 +224,9 @@ const SupportAutomationLanding = () => {
                   </div>
                 </div>
               </div>
-              <div className="group rounded-3xl border border-african-violet-200 bg-white p-8 shadow-lg transition-all hover:border-african-violet-400 hover:shadow-xl">
+              <div className="group rounded-3xl border-2 border-african-violet-200 bg-white p-8 shadow-lg transition-all hover:border-african-violet-400 hover:shadow-2xl hover:-translate-y-1">
                 <div className="flex items-start gap-6">
-                  <div className="rounded-2xl border border-african-violet-400 bg-african-violet-50 p-6 transition-all group-hover:bg-african-violet-100">
+                  <div className="rounded-2xl border border-african-violet-400 bg-african-violet-50 p-6 transition-all group-hover:bg-african-violet-100 group-hover:scale-110 group-hover:rotate-3">
                     <BookOpen className="h-12 w-12 text-african-violet-600" />
                   </div>
                   <div>
@@ -237,8 +238,8 @@ const SupportAutomationLanding = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-12 rounded-3xl border border-blue-green-200 bg-gradient-to-br from-blue-green-50 to-african-violet-50 p-8 sm:p-10 text-center shadow-lg transition-all hover:border-blue-green-400 hover:shadow-xl">
-              <Shield className="w-12 h-12 text-blue-green-600 mx-auto mb-4" />
+            <div className="mt-12 rounded-3xl border-2 border-blue-green-200 bg-gradient-to-br from-blue-green-50 to-african-violet-50 p-8 sm:p-10 text-center shadow-lg transition-all hover:border-blue-green-400 hover:shadow-2xl hover:scale-[1.01]">
+              <Shield className="w-12 h-12 text-blue-green-600 mx-auto mb-4 animate-bounce" />
               <p className="text-lg font-medium text-arkeup-gray-900 leading-relaxed">
                 "Nous branchons notre IA. Elle apprend de vos données existantes. Vous commencez à économiser."
               </p>
@@ -253,8 +254,8 @@ const SupportAutomationLanding = () => {
               Notre workflow en 3 étapes
             </h2>
             <div className="mt-14 grid gap-8 lg:grid-cols-3">
-              <div className="group rounded-3xl border border-blue-green-200 bg-white p-8 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-xl hover:-translate-y-1">
-                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-green-100 border border-blue-green-300 mb-6 transition-all group-hover:bg-blue-green-200 group-hover:scale-110">
+              <div className="group rounded-3xl border-2 border-blue-green-200 bg-white p-8 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-green-100 border border-blue-green-300 mb-6 transition-all group-hover:bg-blue-green-200 group-hover:scale-110 group-hover:rotate-3">
                   <span className="text-3xl font-bold text-blue-green-700">1</span>
                 </div>
                 <div className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-blue-green-700 mb-4">
@@ -264,8 +265,8 @@ const SupportAutomationLanding = () => {
                   L'IA ingère vos données et devient un expert dans votre domaine
                 </p>
               </div>
-              <div className="group rounded-3xl border border-african-violet-200 bg-white p-8 shadow-lg transition-all hover:border-african-violet-400 hover:shadow-xl hover:-translate-y-1">
-                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-african-violet-100 border border-african-violet-300 mb-6 transition-all group-hover:bg-african-violet-200 group-hover:scale-110">
+              <div className="group rounded-3xl border-2 border-african-violet-200 bg-white p-8 shadow-lg transition-all hover:border-african-violet-400 hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-african-violet-100 border border-african-violet-300 mb-6 transition-all group-hover:bg-african-violet-200 group-hover:scale-110 group-hover:rotate-3">
                   <Zap className="h-8 w-8 text-african-violet-700" />
                 </div>
                 <div className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-african-violet-700 mb-4">
@@ -275,8 +276,8 @@ const SupportAutomationLanding = () => {
                   L'IA répond 24/7 aux requêtes N0/N1 (suivi colis, mot de passe, infos produit…).
                 </p>
               </div>
-              <div className="group rounded-3xl border border-blue-green-200 bg-white p-8 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-xl hover:-translate-y-1">
-                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-green-100 border border-blue-green-300 mb-6 transition-all group-hover:bg-blue-green-200 group-hover:scale-110">
+              <div className="group rounded-3xl border-2 border-blue-green-200 bg-white p-8 shadow-lg transition-all hover:border-blue-green-400 hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-green-100 border border-blue-green-300 mb-6 transition-all group-hover:bg-blue-green-200 group-hover:scale-110 group-hover:rotate-3">
                   <ArrowRight className="h-8 w-8 text-blue-green-700" />
                 </div>
                 <div className="text-sm font-semibold uppercase tracking-wider sm:tracking-[0.2em] text-blue-green-700 mb-4">
@@ -305,9 +306,9 @@ const SupportAutomationLanding = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div className="space-y-6">
-                <div className="rounded-2xl border border-blue-green-200 bg-white p-6 shadow-lg">
+                <div className="rounded-2xl border-2 border-blue-green-200 bg-white p-6 shadow-lg hover:shadow-xl hover:border-blue-green-400 transition-all hover:-translate-y-1">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-green-100 flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <CheckCircle className="w-6 h-6 text-blue-green-600" />
                     </div>
                     <div>
@@ -319,9 +320,9 @@ const SupportAutomationLanding = () => {
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-african-violet-200 bg-white p-6 shadow-lg">
+                <div className="rounded-2xl border-2 border-african-violet-200 bg-white p-6 shadow-lg hover:shadow-xl hover:border-african-violet-400 transition-all hover:-translate-y-1">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-african-violet-100 flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-african-violet-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <TrendingUp className="w-6 h-6 text-african-violet-600" />
                     </div>
                     <div>
@@ -333,9 +334,9 @@ const SupportAutomationLanding = () => {
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-blue-green-200 bg-white p-6 shadow-lg">
+                <div className="rounded-2xl border-2 border-blue-green-200 bg-white p-6 shadow-lg hover:shadow-xl hover:border-blue-green-400 transition-all hover:-translate-y-1">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-green-100 flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-green-100 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <MessageSquare className="w-6 h-6 text-blue-green-600" />
                     </div>
                     <div>
@@ -347,7 +348,7 @@ const SupportAutomationLanding = () => {
                   </div>
                 </div>
 
-                <div className="rounded-2xl border-2 border-arkeup-orange-400 bg-gradient-to-br from-arkeup-orange-50 to-arkeup-orange-100 p-6">
+                <div className="rounded-2xl border-2 border-arkeup-orange-400 bg-gradient-to-br from-arkeup-orange-50 to-arkeup-orange-100 p-6 shadow-lg hover:shadow-xl transition-all">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-arkeup-orange-200 flex items-center justify-center">
                       <Clock className="w-6 h-6 text-arkeup-orange-700" />
@@ -361,8 +362,8 @@ const SupportAutomationLanding = () => {
                 </div>
               </div>
 
-              <div className="rounded-3xl border border-blue-green-200 bg-white p-8 shadow-xl">
-                <h3 className="text-2xl font-bold text-arkeup-gray-900 mb-6">
+              <div className="rounded-3xl border-2 border-blue-green-300 bg-white p-8 shadow-2xl hover:shadow-3xl transition-all sticky top-24">
+                <h3 className="text-2xl font-bold text-arkeup-gray-900 mb-6 text-center">
                   Réserver mon Audit Gratuit
                 </h3>
                 
@@ -394,7 +395,7 @@ const SupportAutomationLanding = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border-2 border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-blue-green-500 focus:scale-[1.01] transition-all hover:border-arkeup-gray-400"
                       placeholder="john@entreprise.com"
                     />
                   </div>
@@ -410,7 +411,7 @@ const SupportAutomationLanding = () => {
                       required
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border-2 border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-blue-green-500 focus:scale-[1.01] transition-all hover:border-arkeup-gray-400"
                       placeholder="Nom de votre entreprise"
                     />
                   </div>
@@ -425,7 +426,7 @@ const SupportAutomationLanding = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border-2 border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-blue-green-500 focus:scale-[1.01] transition-all hover:border-arkeup-gray-400"
                       placeholder="+33 6 12 34 56 78"
                     />
                   </div>
@@ -440,14 +441,14 @@ const SupportAutomationLanding = () => {
                       name="website"
                       value={formData.website}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border-2 border-arkeup-gray-300 rounded-lg bg-white text-arkeup-gray-900 placeholder-arkeup-gray-400 focus:ring-2 focus:ring-blue-green-500 focus:border-blue-green-500 focus:scale-[1.01] transition-all hover:border-arkeup-gray-400"
                       placeholder="https://votre-site.com"
                     />
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:from-african-violet-500 hover:to-blue-green-500"
+                    className="w-full inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:scale-[1.05] hover:shadow-2xl hover:from-african-violet-500 hover:to-blue-green-500 focus:ring-4 focus:ring-blue-green-300 focus:outline-none transform active:scale-95"
                   >
                     Obtenir mon Audit Gratuit
                   </button>
@@ -463,9 +464,9 @@ const SupportAutomationLanding = () => {
 
         {/* Success Message Popup */}
         {showSuccessMessage && (
-          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 backdrop-blur-sm">
-            <div className="bg-white border border-blue-green-400 rounded-2xl shadow-2xl max-w-md w-full p-8 text-center">
-              <div className="w-16 h-16 rounded-full bg-blue-green-100 flex items-center justify-center mx-auto mb-6">
+          <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 backdrop-blur-sm animate-fade-in">
+            <div className="bg-white border-2 border-blue-green-400 rounded-2xl shadow-2xl max-w-md w-full p-8 text-center animate-scale-in">
+              <div className="w-16 h-16 rounded-full bg-blue-green-100 flex items-center justify-center mx-auto mb-6 animate-bounce">
                 <CheckCircle className="w-10 h-10 text-blue-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-arkeup-gray-900 mb-4">Demande envoyée !</h3>
@@ -474,7 +475,7 @@ const SupportAutomationLanding = () => {
               </p>
               <button
                 onClick={() => setShowSuccessMessage(false)}
-                className="bg-gradient-to-r from-blue-green-500 to-african-violet-500 text-white px-8 py-3 rounded-full font-bold hover:from-african-violet-500 hover:to-blue-green-500 transition-all"
+                className="bg-gradient-to-r from-blue-green-500 to-african-violet-500 text-white px-8 py-3 rounded-full font-bold hover:from-african-violet-500 hover:to-blue-green-500 hover:scale-105 transition-all focus:ring-4 focus:ring-blue-green-300 active:scale-95"
               >
                 Fermer
               </button>
