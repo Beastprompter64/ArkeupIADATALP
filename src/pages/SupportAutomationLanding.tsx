@@ -92,16 +92,16 @@ const SupportAutomationLanding = () => {
                     Chaque minute d'attente vous coûte des clients et gonfle vos coûts de support.
                   </p>
                 </div>
-                <div className="pt-6 flex flex-row flex-nowrap gap-3 overflow-x-auto">
+                <div className="pt-6 flex flex-row gap-3">
                   <a
                     href="#cta-final"
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:from-blue-green-600 hover:to-african-violet-600 lg:px-10 lg:py-5 lg:text-lg"
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-base font-bold text-white shadow-xl transition-transform duration-300 hover:scale-105 lg:px-10 lg:py-5 lg:text-lg"
                   >
                     Obtenir mon Audit Gratuit
                   </a>
                   <a
                     href="#workflow"
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-african-violet-300 bg-white px-8 py-4 text-base font-semibold text-african-violet-700 shadow-md transition-all duration-300 hover:bg-african-violet-50 hover:border-african-violet-400 lg:px-10 lg:py-5 lg:text-lg"
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-african-violet-300 bg-white px-8 py-4 text-base font-semibold text-african-violet-700 shadow-md transition-transform duration-300 hover:bg-african-violet-50 hover:border-african-violet-400 lg:px-10 lg:py-5 lg:text-lg"
                   >
                     Comment ça marche ?
                   </a>
