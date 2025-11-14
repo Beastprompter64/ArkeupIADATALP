@@ -72,8 +72,9 @@ const SupportAutomationLanding = () => {
             <div className="grid lg:grid-cols-[1fr,1.2fr] gap-12 lg:gap-20 items-center">
               {/* Text Content */}
               <div className="space-y-6 animate-fade-in">
-                <div className="inline-block px-4 py-2 bg-african-violet-100 rounded-full mb-2">
-                  <span className="text-sm font-semibold text-african-violet-700">Support Client Automatisé</span>
+                <div className="inline-flex items-center gap-2 mb-2">
+                  <span className="h-1 w-8 bg-gradient-to-r from-african-violet-500 to-blue-green-500 rounded-full"></span>
+                  <span className="text-sm font-semibold uppercase tracking-wider text-african-violet-700">Support Client Automatisé</span>
                 </div>
                 <h1 className="text-4xl font-bold leading-tight tracking-tight text-arkeup-gray-900 sm:text-5xl lg:text-6xl">
                   <span className="block mb-2">Vos clients attendent</span>
@@ -83,7 +84,7 @@ const SupportAutomationLanding = () => {
                   <span className="block">pour une réponse ?</span>
                 </h1>
                 <p className="text-xl leading-relaxed text-arkeup-gray-600 lg:text-2xl font-light">
-                  Divisez par <strong className="font-bold text-blue-green-600">12</strong> votre temps de réponse. Notre IA gère <strong className="font-bold text-african-violet-600">100%</strong> de vos requêtes Niveau 0 & 1 en <strong className="font-bold text-blue-green-600">30 secondes</strong>.
+                  Divisez par <strong className="font-bold text-blue-green-600">12</strong> votre temps de réponse. Votre IA gère <strong className="font-bold text-african-violet-600">100%</strong> de vos requêtes Niveau 0 & 1 en <strong className="font-bold text-blue-green-600">30 secondes</strong>.
                 </p>
                 <div className="bg-gradient-to-r from-arkeup-orange-50 to-red-50 border-l-4 border-arkeup-orange-500 p-5 rounded-lg shadow-sm">
                   <p className="text-base font-semibold text-arkeup-gray-800 flex items-center gap-2">
@@ -128,12 +129,15 @@ const SupportAutomationLanding = () => {
         <section className="relative border-t border-arkeup-gray-200 bg-white py-16">
           <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <span className="inline-block px-4 py-2 bg-african-violet-100 rounded-full text-sm font-semibold text-african-violet-700 mb-4">Ils nous font confiance</span>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <span className="h-1 w-8 bg-gradient-to-r from-african-violet-500 to-blue-green-500 rounded-full"></span>
+                <span className="text-sm font-semibold uppercase tracking-wider text-african-violet-700">Ils nous font confiance</span>
+              </div>
               <h2 className="text-3xl font-bold text-arkeup-gray-900 mb-3">
                 Des leaders du retail qui ont choisi l'automatisation
               </h2>
               <p className="text-lg text-arkeup-gray-600 max-w-2xl mx-auto">
-                Rejoignez les entreprises qui gèrent des millions de clients avec notre IA sur mesure
+                Rejoignez les entreprises qui gèrent des millions de clients avec votre IA sur mesure
               </p>
             </div>
             
@@ -161,7 +165,10 @@ const SupportAutomationLanding = () => {
         <section className="relative border-t border-arkeup-gray-200 py-24 bg-gradient-to-b from-gray-50 to-white">
           <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-red-100 rounded-full text-sm font-semibold text-red-700 mb-4">Le constat</span>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <span className="h-1 w-8 bg-red-500 rounded-full"></span>
+                <span className="text-sm font-semibold uppercase tracking-wider text-red-700">Le constat</span>
+              </div>
               <h2 className="text-3xl font-bold text-arkeup-gray-900 sm:text-4xl lg:text-5xl mb-4">
                 Arrêtez de payer des humains pour
                 <span className="block text-red-600">copier-coller des réponses</span>
@@ -197,7 +204,7 @@ const SupportAutomationLanding = () => {
               </div>
               <div className="relative rounded-3xl border-2 border-blue-green-400 bg-gradient-to-br from-blue-green-50 via-white to-african-violet-50 p-8 shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1 hover:border-blue-green-500">
                 <div className="absolute -top-4 left-8 bg-gradient-to-r from-blue-green-500 to-african-violet-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
-                  ✨ Avec Notre IA
+                  ✨ Avec Votre IA
                 </div>
                 <h3 className="text-xl font-bold text-blue-green-700 mb-8 mt-4">
                   Ce que vous obtiendrez demain
@@ -266,7 +273,7 @@ const SupportAutomationLanding = () => {
             <div className="rounded-2xl border-2 border-blue-green-200 bg-gradient-to-br from-blue-green-50 to-african-violet-50 p-8 text-center shadow-md">
               <Shield className="w-10 h-10 text-blue-green-600 mx-auto mb-4" />
               <p className="text-lg font-medium text-arkeup-gray-900 leading-relaxed">
-                "Nous branchons notre IA. Elle apprend de vos données existantes. Vous commencez à économiser."
+                "Nous branchons votre IA. Elle apprend de vos données existantes. Vous commencez à économiser."
               </p>
             </div>
           </div>
@@ -275,7 +282,10 @@ const SupportAutomationLanding = () => {
         <section id="workflow" className="relative border-t border-arkeup-gray-200 py-24 bg-gradient-to-b from-white to-african-violet-50/30">
           <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-blue-green-100 rounded-full text-sm font-semibold text-blue-green-700 mb-4">Simple & Rapide</span>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <span className="h-1 w-8 bg-gradient-to-r from-blue-green-500 to-blue-green-600 rounded-full"></span>
+                <span className="text-sm font-semibold uppercase tracking-wider text-blue-green-700">Simple & Rapide</span>
+              </div>
               <h2 className="text-3xl font-bold text-arkeup-gray-900 sm:text-4xl lg:text-5xl mb-4">
                 Comment ça marche ?
               </h2>
@@ -331,7 +341,10 @@ const SupportAutomationLanding = () => {
         <section id="cta-final" className="relative border-t border-arkeup-gray-200 py-20 bg-gradient-to-b from-african-violet-50/20 to-white">
           <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-green-100 to-african-violet-100 rounded-full text-sm font-semibold text-blue-green-700 mb-4">Offre Exclusive</span>
+              <div className="inline-flex items-center gap-2 mb-4">
+                <span className="h-1 w-8 bg-gradient-to-r from-blue-green-500 to-african-violet-500 rounded-full"></span>
+                <span className="text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-blue-green-700 to-african-violet-700 bg-clip-text text-transparent">Offre Exclusive</span>
+              </div>
               <h2 className="text-3xl font-bold text-arkeup-gray-900 sm:text-4xl lg:text-5xl mb-6">
                 <span className="block">On vous montre le ROI</span>
                 <span className="bg-gradient-to-r from-blue-green-600 to-african-violet-600 bg-clip-text text-transparent">avant de parler de prix</span>
