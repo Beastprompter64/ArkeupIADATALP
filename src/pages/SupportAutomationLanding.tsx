@@ -74,7 +74,7 @@ const SupportAutomationLanding = () => {
               <div className="absolute inset-0 rounded-[48px] border border-african-violet-200/30 bg-gradient-to-br from-blue-green-500/20 via-transparent to-african-violet-500/20 blur-3xl group-hover:blur-2xl transition-all"></div>
               <div className="relative rounded-[40px] border border-african-violet-200/30 bg-white/60 p-6 sm:p-10 shadow-[0_40px_120px_-40px_rgba(130,87,229,0.3)] backdrop-blur hover:shadow-[0_50px_150px_-50px_rgba(130,87,229,0.4)] transition-all duration-500 w-full">
                 <img 
-                  src="https://images.pexels.com/photos/7709207/pexels-photo-7709207.jpeg"
+                  src="RobotSupport.webp"
                   alt="Support client automatisé par IA - Agent utilisant un système intelligent"
                   className="w-full h-64 sm:h-80 object-cover rounded-[32px] border border-african-violet-200/30 transform group-hover:scale-[1.02] transition-transform duration-500"
                   loading="eager"
