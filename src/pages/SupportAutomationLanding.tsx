@@ -486,7 +486,7 @@ const SupportAutomationLanding = () => {
                       Site web
                     </label>
                     <input
-                      type="url"
+                      type="text"
                       id="website"
                       name="website"
                       value={formData.website}

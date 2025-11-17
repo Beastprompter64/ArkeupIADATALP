@@ -392,8 +392,8 @@ const Hero = () => {
                     Site web (optionnel)
                   </label>
                   <input
-                    type="url"
-                    id="roi-website"
+                    type="text"
+                    id="website"
                     name="website"
                     value={roiFormData.website}
                     onChange={handleRoiInputChange}
