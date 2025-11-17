@@ -68,40 +68,40 @@ const SupportAutomationLanding = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-arkeup-orange/5 to-arkeup-orange/5"></div>
           <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-blue-green-500/30 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-african-violet-500/30 blur-3xl"></div>
-          <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-12 lg:gap-20 items-center">
+          <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8 sm:gap-12 lg:gap-20 items-center">
               {/* Text Content */}
-              <div className="space-y-6 animate-fade-in">
+              <div className="space-y-4 sm:space-y-6 animate-fade-in">
                 <div className="inline-flex items-center gap-2 mb-2">
-                  <span className="h-1 w-8 bg-gradient-to-r from-african-violet-500 to-blue-green-500 rounded-full"></span>
-                  <span className="text-sm font-semibold uppercase tracking-wider text-african-violet-700">Support Client Automatisé</span>
+                  <span className="h-1 w-6 sm:w-8 bg-gradient-to-r from-african-violet-500 to-blue-green-500 rounded-full"></span>
+                  <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-african-violet-700">Support Client Automatisé</span>
                 </div>
-                <h1 className="text-4xl font-bold leading-tight tracking-tight text-arkeup-gray-900 sm:text-5xl lg:text-6xl">
-                  <span className="block mb-2">Vos clients attendent</span>
+                <h1 className="text-3xl font-bold leading-tight tracking-tight text-arkeup-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+                  <span className="block mb-1 sm:mb-2">Vos clients attendent</span>
                   <span className="bg-gradient-to-r from-african-violet to-blue-green bg-clip-text text-transparent">
                     6 minutes
                   </span>
                   <span className="block">pour une réponse ?</span>
                 </h1>
-                <p className="text-xl leading-relaxed text-arkeup-gray-600 lg:text-2xl font-light">
+                <p className="text-base sm:text-lg lg:text-xl xl:text-2xl leading-relaxed text-arkeup-gray-600 font-light">
                   Divisez par <strong className="font-bold text-blue-green-600">12</strong> votre temps de réponse. Votre IA gère <strong className="font-bold text-african-violet-600">100%</strong> de vos requêtes Niveau 0 & 1 en <strong className="font-bold text-blue-green-600">30 secondes</strong>.
                 </p>
-                <div className="bg-gradient-to-r from-arkeup-orange-50 to-red-50 border-l-4 border-arkeup-orange-500 p-5 rounded-lg shadow-sm">
-                  <p className="text-base font-semibold text-arkeup-gray-800 flex items-center gap-2">
-                    <span className="text-xl">⚠️</span>
-                    Chaque minute d'attente vous coûte des clients et gonfle vos coûts de support.
+                <div className="bg-gradient-to-r from-arkeup-orange-50 to-red-50 border-l-4 border-arkeup-orange-500 p-4 sm:p-5 rounded-lg shadow-sm">
+                  <p className="text-sm sm:text-base font-semibold text-arkeup-gray-800 flex items-start sm:items-center gap-2">
+                    <span className="text-lg sm:text-xl flex-shrink-0">⚠️</span>
+                    <span>Chaque minute d'attente vous coûte des clients et gonfle vos coûts de support.</span>
                   </p>
                 </div>
-                <div className="pt-6 flex flex-row gap-3">
+                <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row gap-3">
                   <a
                     href="#cta-final"
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-8 py-4 text-base font-bold text-white shadow-xl transition-transform duration-300 hover:scale-105 lg:px-10 lg:py-5 lg:text-lg"
+                    className="inline-flex items-center justify-center text-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl transition-transform duration-300 hover:scale-105 lg:px-10 lg:py-5 lg:text-lg"
                   >
                     Obtenir mon Audit Gratuit
                   </a>
                   <a
                     href="#workflow"
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-african-violet-300 bg-white px-8 py-4 text-base font-semibold text-african-violet-700 shadow-md transition-transform duration-300 hover:bg-african-violet-50 hover:border-african-violet-400 lg:px-10 lg:py-5 lg:text-lg"
+                    className="inline-flex items-center justify-center text-center rounded-full border-2 border-african-violet-300 bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-african-violet-700 shadow-md transition-transform duration-300 hover:bg-african-violet-50 hover:border-african-violet-400 lg:px-10 lg:py-5 lg:text-lg"
                   >
                     Comment ça marche ?
                   </a>
@@ -109,10 +109,10 @@ const SupportAutomationLanding = () => {
               </div>
               
               {/* Image */}
-              <div className="relative lg:ml-8">
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-green-400/20 to-african-violet-400/20 rounded-3xl blur-2xl"></div>
-                <div className="relative overflow-hidden rounded-3xl border border-african-violet-200 bg-white shadow-2xl p-2">
-                  <div className="overflow-hidden rounded-2xl">
+              <div className="relative mt-8 lg:mt-0 lg:ml-8">
+                <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-blue-green-400/20 to-african-violet-400/20 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl"></div>
+                <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-african-violet-200 bg-white shadow-xl sm:shadow-2xl p-1 sm:p-2">
+                  <div className="overflow-hidden rounded-xl sm:rounded-2xl">
                     <img 
                       src="RobotSupport.webp"
                       alt="Support client automatisé par IA - Agent utilisant un système intelligent"
