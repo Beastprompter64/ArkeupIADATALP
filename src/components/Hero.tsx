@@ -92,7 +92,7 @@ const Hero = () => {
     setIsFormSubmitting(true);
     
     try {
-      const response = await fetch('https://arkedown.app.n8n.cloud/webhook/844e5c4f-9dc2-405c-a19b-039df6856f0a', {
+      const response = await fetch('https://arkedown.app.n8n.cloud/webhook/data&IA', {
         method: 'POST',
         mode: 'cors',
         headers: {

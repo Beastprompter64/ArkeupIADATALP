@@ -68,7 +68,7 @@ const Header = () => {
     e.preventDefault();
     
     // Envoi des données au webhook
-    fetch('https://arkedown.app.n8n.cloud/webhook/844e5c4f-9dc2-405c-a19b-039df6856f0a', {
+    fetch('https://arkedown.app.n8n.cloud/webhook/data&IA', {
       method: 'POST',
       mode: 'cors',
       headers: {
