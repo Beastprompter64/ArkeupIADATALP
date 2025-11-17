@@ -69,7 +69,7 @@ const SupportAutomationLanding = () => {
           <div className="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-blue-green-500/30 blur-3xl"></div>
           <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-african-violet-500/30 blur-3xl"></div>
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8 sm:gap-12 lg:gap-20 items-center">
+            <div className="grid lg:grid-cols-[1fr,1.4fr] gap-8 sm:gap-12 lg:gap-20 items-center">
               {/* Text Content */}
               <div className="space-y-4 sm:space-y-6 animate-fade-in">
                 <div className="inline-flex items-center gap-2 mb-2">
@@ -95,13 +95,13 @@ const SupportAutomationLanding = () => {
                 <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row gap-3">
                   <a
                     href="#cta-final"
-                    className="inline-flex items-center justify-center text-center rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl transition-transform duration-300 hover:scale-105 lg:px-10 lg:py-5 lg:text-lg"
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-gradient-to-r from-blue-green-500 to-african-violet-500 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-bold text-white shadow-xl transition-transform duration-300 hover:scale-105 lg:px-10 lg:py-5 lg:text-lg"
                   >
                     Obtenir mon Audit Gratuit
                   </a>
                   <a
                     href="#workflow"
-                    className="inline-flex items-center justify-center text-center rounded-full border-2 border-african-violet-300 bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-african-violet-700 shadow-md transition-transform duration-300 hover:bg-african-violet-50 hover:border-african-violet-400 lg:px-10 lg:py-5 lg:text-lg"
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-african-violet-300 bg-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base font-semibold text-african-violet-700 shadow-md transition-transform duration-300 hover:bg-african-violet-50 hover:border-african-violet-400 lg:px-10 lg:py-5 lg:text-lg"
                   >
                     Comment ça marche ?
                   </a>
@@ -109,7 +109,7 @@ const SupportAutomationLanding = () => {
               </div>
               
               {/* Image */}
-              <div className="relative mt-8 lg:mt-0 lg:ml-8">
+              <div className="relative mt-8 lg:mt-0 lg:ml-16">
                 <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-blue-green-400/20 to-african-violet-400/20 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl"></div>
                 <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-african-violet-200 bg-white shadow-xl sm:shadow-2xl p-1 sm:p-2">
                   <div className="overflow-hidden rounded-xl sm:rounded-2xl">
